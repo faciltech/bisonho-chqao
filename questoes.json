@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "texto": "De acordo com o Estatuto dos Militares (Lei nº 6.880/1980), a base institucional das Forças Armadas é constituída por:",
+        "opcoes": [
+            "Liderança e Chefia",
+            "Comando e Subordinação",
+            "Hierarquia e Disciplina",
+            "Honra e Lealdade"
+        ],
+        "respostaCorreta": "Hierarquia e Disciplina",
+        "fundamentacao": "Art. 14. A hierarquia e a disciplina são a base institucional das Forças Armadas."
+    },
+    {
+        "id": 2,
+        "texto": "Segundo o Regulamento Disciplinar do Exército (RDE), a transgressão disciplinar é classificada em:",
+        "opcoes": [
+            "Leve, Média e Grave",
+            "Leve, Grave e Gravíssima",
+            "Média, Grave e Gravíssima",
+            "Atenuante e Agravante"
+        ],
+        "respostaCorreta": "Leve, Média e Grave",
+        "fundamentacao": "Art. 18. A transgressão da disciplina é classificada em: I - leve; II - média; III - grave."
+    },
+    {
+        "id": 3,
+        "texto": "Conforme o Regulamento de Continências (R-2), o propósito da continência é:",
+        "opcoes": [
+            "Demonstrar subordinação cega ao comandante.",
+            "A saudação prestada pelo militar, sendo impessoal e visando a autoridade.",
+            "Apenas o cumprimento entre militares de mesmo posto.",
+            "Identificar a Força Singular a qual o militar pertence."
+        ],
+        "respostaCorreta": "A saudação prestada pelo militar, sendo impessoal e visando a autoridade.",
+        "fundamentacao": "A continência é a saudação prestada pelo militar e pode ser individual ou da tropa, manifestando respeito e apreço."
+    }
+]

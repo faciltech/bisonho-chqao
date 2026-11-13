@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bisonho - Simulado CHQAO</title>
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'eb-verde': '#4B5320',
+                        'eb-cinza': '#708090',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-200 min-h-screen font-sans">
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const { useState, useEffect } = React;
+
+        function App() {
+            const [questoes, setQuestoes] = useState([]);
+            const [carregando, setCarregando] = useState(true);
+            const [erro, setErro] = useState(null);
+            
+            const [perguntaAtual, setPerguntaAtual] = useState(0);
+            const [pontuacao, setPontuacao] = useState(0);
+            const [mostrarResultado, setMostrarResultado] = useState(false);
+            const [respostasUsuario, setRespostasUsuario] = useState([]);
+
+            const carregarQuestoes = () => {
+                setCarregando(true);
+                fetch('./questoes.json?v=' + new Date().getTime())
+                    .then(res => {
+                        if (!res.ok) throw new Error("Arquivo questoes.json não encontrado.");
+                        return res.json();
+                    })
+                    .then(dados => {
+                        const embaralhadas = [...dados].sort(() => Math.random() - 0.5);
+                        setQuestoes(embaralhadas);
+                        setCarregando(false);
+                    })
+                    .catch(err => {
+                        setErro(err.message);
+                        setCarregando(false);
+                    });
+            };
+
+            useEffect(() => {
+                carregarQuestoes();
+            }, []);
+
+            const handleResponder = (opcaoSelecionada) => {
+                const qAtual = questoes[perguntaAtual];
+                const acertou = opcaoSelecionada === qAtual.respostaCorreta;
+                
+                if (acertou) setPontuacao(pontuacao + 1);
+
+                setRespostasUsuario([...respostasUsuario, {
+                    pergunta: qAtual,
+                    selecionada: opcaoSelecionada,
+                    acertou: acertou
+                }]);
+
+                const proxima = perguntaAtual + 1;
+                if (proxima < questoes.length) {
+                    setPerguntaAtual(proxima);
+                } else {
+                    setMostrarResultado(true);
+                }
+            };
+
+            const reiniciarSimulado = () => {
+                setPerguntaAtual(0);
+                setPontuacao(0);
+                setMostrarResultado(false);
+                setRespostasUsuario([]);
+                carregarQuestoes();
+            };
+
+            if (carregando) {
+                return <div className="flex justify-center items-center h-screen text-eb-verde font-bold text-xl">Carregando banco de questões...</div>;
+            }
+
+            if (erro || questoes.length === 0) {
+                return (
+                    <div className="max-w-xl mx-auto p-6 mt-12 bg-white rounded shadow border-t-4 border-red-600">
+                        <h2 className="text-xl font-bold text-red-700">Banco de questões indisponível</h2>
+                        <p className="mt-2 text-gray-600">{erro || "Nenhuma questão cadastrada no questoes.json."}</p>
+                    </div>
+                );
+            }
+
+            if (mostrarResultado) {
+                return (
+                    <div className="max-w-3xl mx-auto p-4 py-8">
+                        <div className="bg-white rounded-lg shadow-xl overflow-hidden border-t-4 border-eb-verde">
+                            <div className="bg-eb-verde text-white p-6 text-center">
+                                <h1 className="text-3xl font-bold">Missão Cumprida</h1>
+                                <p className="text-xl mt-2">Você acertou {pontuacao} de {questoes.length} questões</p>
+                            </div>
+                            
+                            <div className="p-6 space-y-6">
+                                <h2 className="text-2xl font-bold text-gray-800 border-b pb-2">Revisão Pós-Ação (RPA)</h2>
+                                {respostasUsuario.map((item, index) => (
+                                    <div key={index} className={`p-4 rounded border-l-4 ${item.acertou ? 'border-green-500 bg-green-50' : 'border-red-500 bg-red-50'}`}>
+                                        <p className="font-semibold text-gray-800">Q{index + 1}: {item.pergunta.texto}</p>
+                                        <div className="mt-2 text-sm space-y-1">
+                                            <p><span className="font-bold">Sua resposta:</span> <span className={item.acertou ? 'text-green-700' : 'text-red-700'}>{item.selecionada}</span></p>
+                                            {!item.acertou && <p><span className="font-bold text-green-700">Resposta correta:</span> {item.pergunta.respostaCorreta}</p>}
+                                            <p className="mt-2 text-gray-600 italic"><span className="font-bold">Fundamentação:</span> {item.pergunta.fundamentacao}</p>
+                                        </div>
+                                    </div>
+                                ))}
+                                <button 
+                                    onClick={reiniciarSimulado}
+                                    className="w-full bg-eb-verde hover:bg-green-800 text-white font-bold py-3 px-4 rounded transition duration-200"
+                                >
+                                    Realizar Novo Simulado
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                );
+            }
+
+            return (
+                <div className="max-w-2xl mx-auto p-4 py-12">
+                    <div className="bg-white rounded-lg shadow-xl overflow-hidden border-t-4 border-eb-verde">
+                        <div className="bg-eb-verde text-white p-4 flex justify-between items-center">
+                            <span className="font-bold text-lg">BISONHO - Simulado CHQAO</span>
+                            <span className="bg-white text-eb-verde px-3 py-1 rounded font-bold text-sm">
+                                Questão {perguntaAtual + 1} / {questoes.length}
+                            </span>
+                        </div>
+                        
+                        <div className="p-6">
+                            <h2 className="text-xl font-medium text-gray-800 mb-6">
+                                {questoes[perguntaAtual].texto}
+                            </h2>
+                            
+                            <div className="space-y-3">
+                                {questoes[perguntaAtual].opcoes.map((opcao, index) => (
+                                    <button
+                                        key={index}
+                                        onClick={() => handleResponder(opcao)}
+                                        className="w-full text-left p-4 rounded border border-gray-300 hover:border-eb-verde hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-eb-verde transition duration-150 text-gray-700"
+                                    >
+                                        {opcao}
+                                    </button>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+    </script>
+</body>
+</html>
