@@ -3,8 +3,6 @@ import json
 import os
 import shutil
 from google import genai
-from google.genai import types
-from pydantic import BaseModel
 from pypdf import PdfReader
 
 CHAVE_API = os.environ.get("GEMINI_API_KEY")
@@ -17,18 +15,6 @@ if not CHAVE_API:
 
 client = genai.Client(api_key=CHAVE_API)
 
-
-class Questao(BaseModel):
-    texto: str
-    opcoes: list[str]
-    respostaCorreta: str
-    fundamentacao: str
-
-
-class LoteQuestoes(BaseModel):
-    questoes: list[Questao]
-
-
 def carregar_banco_existente():
     if os.path.exists(ARQUIVO_SAIDA):
         with open(ARQUIVO_SAIDA, "r", encoding="utf-8") as f:
@@ -37,7 +23,6 @@ def carregar_banco_existente():
             except json.JSONDecodeError:
                 return []
     return []
-
 
 def processar_todos_pdfs():
     pdfs = glob.glob(os.path.join(PASTA_ENTRADA, "*.pdf"))
@@ -64,37 +49,55 @@ def processar_todos_pdfs():
             blocos.append(texto_acumulado)
 
         for idx, bloco in enumerate(blocos, 1):
-            print(f"Gerando lote de 30 questões do bloco {idx}/{len(blocos)}...")
+            print(f"Gerando lote de questões do bloco {idx}/{len(blocos)}...")
             prompt = f"""
             Atue como uma banca examinadora do Exército Brasileiro elaborando prova para o CHQAO.
             Com base EXCLUSIVAMENTE no texto regulatório abaixo, elabore 30 questões inéditas de múltipla escolha.
             
-            Regras obrigatórias:
-            1. Cada questão deve ter exatamente 4 alternativas em 'opcoes'.
-            2. O campo 'respostaCorreta' deve conter o texto EXATAMENTE IGUAL ao da alternativa correta listada em 'opcoes'.
-            3. No campo 'fundamentacao', cite expressamente o artigo, parágrafo, inciso ou item do texto que justifica o gabarito.
-            4. Evite questões óbvias; cobre prazos, competências, classificações e exceções.
+            Retorne APENAS um JSON puro (sem blocos de código markdown como ```json) no seguinte formato exato de lista:
+            [
+              {
+                "texto": "Enunciado da questão aqui?",
+                "opcoes": [
+                  "Alternativa A",
+                  "Alternativa B",
+                  "Alternativa C",
+                  "Alternativa D"
+                ],
+                "respostaCorreta": "Alternativa A",
+                "fundamentacao": "Artigo X do regulamento."
+              }
+            ]
 
             TEXTO BASE:
             {bloco}
             """
 
-            response = client.models.generate_content(
-                model="gemini-1.5-flash",
-                contents=prompt,
-                config=types.GenerateContentConfig(
-                    response_mime_type="application/json",
-                    response_schema=LoteQuestoes,
-                    temperature=0.3,
-                ),
-            )
+            try:
+                response = client.models.generate_content(
+                    model="gemini-2.0-flash",
+                    contents=prompt
+                )
+                
+                texto_resposta = response.text.strip()
+                # Remove marcações de markdown caso a IA coloque
+                if texto_resposta.startswith("```"):
+                    texto_resposta = texto_resposta.split("```")[1]
+                    if texto_resposta.startswith("json"):
+                        texto_resposta = texto_resposta[4:]
+                texto_resposta = texto_resposta.strip()
 
-            resultado = json.loads(response.text)
-            for q in resultado.get("questoes", []):
-                if q["respostaCorreta"] in q["opcoes"]:
-                    q["id"] = proximo_id
-                    banco_atual.append(q)
-                    proximo_id += 1
+                resultado = json.loads(texto_resposta)
+                
+                if isinstance(resultado, list):
+                    for q in resultado:
+                        if "texto" in q and "opcoes" in q and "respostaCorreta" in q:
+                            if q["respostaCorreta"] in q["opcoes"]:
+                                q["id"] = proximo_id
+                                banco_atual.append(q)
+                                proximo_id += 1
+            except Exception as e:
+                print(f"Erro ao processar bloco com IA: {e}")
 
         nome_arquivo = os.path.basename(caminho_pdf)
         shutil.move(caminho_pdf, os.path.join(PASTA_SAIDA, nome_arquivo))
@@ -103,7 +106,6 @@ def processar_todos_pdfs():
         json.dump(banco_atual, f, ensure_ascii=False, indent=4)
 
     print(f"Processo finalizado. Total no banco: {len(banco_atual)} questões.")
-
 
 if __name__ == "__main__":
     processar_todos_pdfs()
