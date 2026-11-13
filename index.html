@@ -28,9 +28,11 @@
         const { useState, useEffect } = React;
 
         function App() {
-            const [questoes, setQuestoes] = useState([]);
+            const [bancoTotal, setBancoTotal] = useState([]);
+            const [questoesQuiz, setQuestoesQuiz] = useState([]);
             const [carregando, setCarregando] = useState(true);
             const [erro, setErro] = useState(null);
+            const [iniciado, setIniciado] = useState(false);
             
             const [perguntaAtual, setPerguntaAtual] = useState(0);
             const [pontuacao, setPontuacao] = useState(0);
@@ -45,8 +47,7 @@
                         return res.json();
                     })
                     .then(dados => {
-                        const embaralhadas = [...dados].sort(() => Math.random() - 0.5);
-                        setQuestoes(embaralhadas);
+                        setBancoTotal(dados);
                         setCarregando(false);
                     })
                     .catch(err => {
@@ -59,8 +60,20 @@
                 carregarQuestoes();
             }, []);
 
+            const iniciarSimulado = () => {
+                // Embaralha todo o banco e pega até 30 questões para o quiz
+                const embaralhadas = [...bancoTotal].sort(() => Math.random() - 0.5);
+                const selecionadas = embaralhadas.slice(0, 30);
+                setQuestoesQuiz(selecionadas);
+                setPerguntaAtual(0);
+                setPontuacao(0);
+                setMostrarResultado(false);
+                setRespostasUsuario([]);
+                setIniciado(true);
+            };
+
             const handleResponder = (opcaoSelecionada) => {
-                const qAtual = questoes[perguntaAtual];
+                const qAtual = questoesQuiz[perguntaAtual];
                 const acertou = opcaoSelecionada === qAtual.respostaCorreta;
                 
                 if (acertou) setPontuacao(pontuacao + 1);
@@ -72,7 +85,7 @@
                 }]);
 
                 const proxima = perguntaAtual + 1;
-                if (proxima < questoes.length) {
+                if (proxima < questoesQuiz.length) {
                     setPerguntaAtual(proxima);
                 } else {
                     setMostrarResultado(true);
@@ -80,10 +93,7 @@
             };
 
             const reiniciarSimulado = () => {
-                setPerguntaAtual(0);
-                setPontuacao(0);
-                setMostrarResultado(false);
-                setRespostasUsuario([]);
+                setIniciado(false);
                 carregarQuestoes();
             };
 
@@ -91,11 +101,36 @@
                 return <div className="flex justify-center items-center h-screen text-eb-verde font-bold text-xl">Carregando banco de questões...</div>;
             }
 
-            if (erro || questoes.length === 0) {
+            if (erro) {
                 return (
                     <div className="max-w-xl mx-auto p-6 mt-12 bg-white rounded shadow border-t-4 border-red-600">
                         <h2 className="text-xl font-bold text-red-700">Banco de questões indisponível</h2>
-                        <p className="mt-2 text-gray-600">{erro || "Nenhuma questão cadastrada no questoes.json."}</p>
+                        <p className="mt-2 text-gray-600">{erro}</p>
+                    </div>
+                );
+            }
+
+            // Tela Inicial com estatísticas do banco de dados
+            if (!iniciado) {
+                return (
+                    <div className="max-w-xl mx-auto p-6 py-12">
+                        <div className="bg-white rounded-lg shadow-xl overflow-hidden border-t-4 border-eb-verde text-center p-8 space-y-6">
+                            <h1 className="text-3xl font-bold text-eb-verde">BISONHO - Simulado CHQAO</h1>
+                            <p className="text-gray-600">Prepare-se para o Curso de Habilitação ao Quadro Auxiliar de Oficiais com questões extraídas diretamente dos regulamentos do Exército.</p>
+                            
+                            <div className="bg-gray-100 p-4 rounded-lg border border-gray-300 inline-block w-full">
+                                <span className="block text-sm text-gray-500 font-semibold uppercase tracking-wider">Questões cadastradas na base:</span>
+                                <span className="text-4xl font-extrabold text-eb-verde">{bancoTotal.length}</span>
+                            </div>
+
+                            <button 
+                                onClick={iniciarSimulado}
+                                disabled={bancoTotal.length === 0}
+                                className="w-full bg-eb-verde hover:bg-green-800 text-white font-bold py-4 px-6 rounded-lg transition duration-200 shadow-md text-lg disabled:opacity-50"
+                            >
+                                {bancoTotal.length === 0 ? "Nenhuma questão disponível" : "Iniciar Simulado (30 Questões)"}
+                            </button>
+                        </div>
                     </div>
                 );
             }
@@ -106,7 +141,7 @@
                         <div className="bg-white rounded-lg shadow-xl overflow-hidden border-t-4 border-eb-verde">
                             <div className="bg-eb-verde text-white p-6 text-center">
                                 <h1 className="text-3xl font-bold">Missão Cumprida</h1>
-                                <p className="text-xl mt-2">Você acertou {pontuacao} de {questoes.length} questões</p>
+                                <p className="text-xl mt-2">Você acertou {pontuacao} de {questoesQuiz.length} questões</p>
                             </div>
                             
                             <div className="p-6 space-y-6">
@@ -125,7 +160,7 @@
                                     onClick={reiniciarSimulado}
                                     className="w-full bg-eb-verde hover:bg-green-800 text-white font-bold py-3 px-4 rounded transition duration-200"
                                 >
-                                    Realizar Novo Simulado
+                                    Voltar ao Início / Novo Simulado
                                 </button>
                             </div>
                         </div>
@@ -139,17 +174,17 @@
                         <div className="bg-eb-verde text-white p-4 flex justify-between items-center">
                             <span className="font-bold text-lg">BISONHO - Simulado CHQAO</span>
                             <span className="bg-white text-eb-verde px-3 py-1 rounded font-bold text-sm">
-                                Questão {perguntaAtual + 1} / {questoes.length}
+                                Questão {perguntaAtual + 1} / {questoesQuiz.length}
                             </span>
                         </div>
                         
                         <div className="p-6">
                             <h2 className="text-xl font-medium text-gray-800 mb-6">
-                                {questoes[perguntaAtual].texto}
+                                {questoesQuiz[perguntaAtual].texto}
                             </h2>
                             
                             <div className="space-y-3">
-                                {questoes[perguntaAtual].opcoes.map((opcao, index) => (
+                                {questoesQuiz[perguntaAtual].opcoes.map((opcao, index) => (
                                     <button
                                         key={index}
                                         onClick={() => handleResponder(opcao)}
