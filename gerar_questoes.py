@@ -68,7 +68,7 @@ def processar_todos_pdfs():
             print(f"Gerando questões do bloco {idx}/{len(blocos)}...")
             prompt = f"""
             Atue como uma banca examinadora do Exército Brasileiro elaborando prova para o CHQAO.
-            Com base EXCLUSIVAMENTE no texto regulatório abaixo, elabore 5 questões inéditas de múltipla escolha.
+            Com base EXCLUSIVAMENTE no texto regulatório abaixo, elabore 30 questões inéditas de múltipla escolha.
             
             Regras obrigatórias:
             1. Cada questão deve ter exatamente 4 alternativas em 'opcoes'.
