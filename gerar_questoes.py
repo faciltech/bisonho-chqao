@@ -50,28 +50,29 @@ def processar_todos_pdfs():
 
         for idx, bloco in enumerate(blocos, 1):
             print(f"Gerando lote de questões do bloco {idx}/{len(blocos)}...")
-            prompt = f"""
-            Atue como uma banca examinadora do Exército Brasileiro elaborando prova para o CHQAO.
-            Com base EXCLUSIVAMENTE no texto regulatório abaixo, elabore 30 questões inéditas de múltipla escolha.
             
-            Retorne APENAS um JSON puro (sem blocos de código markdown como ```json) no seguinte formato exato de lista:
-            [
-              {
-                "texto": "Enunciado da questão aqui?",
-                "opcoes": [
-                  "Alternativa A",
-                  "Alternativa B",
-                  "Alternativa C",
-                  "Alternativa D"
-                ],
-                "respostaCorreta": "Alternativa A",
-                "fundamentacao": "Artigo X do regulamento."
-              }
-            ]
+            exemplo_json = """[
+  {
+    "texto": "Enunciado da questão aqui?",
+    "opcoes": [
+      "Alternativa A",
+      "Alternativa B",
+      "Alternativa C",
+      "Alternativa D"
+    ],
+    "respostaCorreta": "Alternativa A",
+    "fundamentacao": "Artigo X do regulamento."
+  }
+]"""
 
-            TEXTO BASE:
-            {bloco}
-            """
+            prompt = (
+                "Atue como uma banca examinadora do Exército Brasileiro elaborando prova para o CHQAO.\n"
+                "Com base EXCLUSIVAMENTE no texto regulatório abaixo, elabore 30 questões inéditas de múltipla escolha.\n\n"
+                "Retorne APENAS um JSON puro (sem blocos de código markdown como ```json) no seguinte formato exato de lista:\n"
+                f"{exemplo_json}\n\n"
+                "TEXTO BASE:\n"
+                f"{bloco}"
+            )
 
             try:
                 response = client.models.generate_content(
@@ -80,7 +81,6 @@ def processar_todos_pdfs():
                 )
                 
                 texto_resposta = response.text.strip()
-                # Remove marcações de markdown caso a IA coloque
                 if texto_resposta.startswith("```"):
                     texto_resposta = texto_resposta.split("```")[1]
                     if texto_resposta.startswith("json"):
