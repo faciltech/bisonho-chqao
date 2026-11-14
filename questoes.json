@@ -34,5 +34,17 @@
         ],
         "respostaCorreta": "A saudação prestada pelo militar, sendo impessoal e visando a autoridade.",
         "fundamentacao": "A continência é a saudação prestada pelo militar e pode ser individual ou da tropa, manifestando respeito e apreço."
+    },
+    {
+        "id": 4,
+        "texto": "Questão de teste gerada automaticamente pelo GitHub Actions.",
+        "opcoes": [
+            "Alternativa A",
+            "Alternativa B",
+            "Alternativa C",
+            "Alternativa D"
+        ],
+        "respostaCorreta": "Alternativa A",
+        "fundamentacao": "Teste de funcionamento do workflow."
     }
 ]
