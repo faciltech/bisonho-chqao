@@ -77,9 +77,9 @@ def processar_todos_pdfs():
   }
 ]"""
 
-            prompt = (
+prompt = (
                 "Atue como uma banca examinadora do Exército Brasileiro elaborando prova para o CHQAO.\n"
-                "Com base EXCLUSIVAMENTE no texto regulatório abaixo, elabore questões inéditas de múltipla escolha.\n\n"
+                "Analise minuciosamente todo o texto regulatório fornecido abaixo e elabore o MAIOR NÚMERO POSSÍVEL de questões inéditas de múltipla escolha (esgote todos os artigos, detalhes, exceções e conceitos importantes do texto).\n\n"
                 "Retorne APENAS um JSON puro em formato de lista contendo os campos: texto, opcoes (array com 4 strings), respostaCorreta e fundamentacao.\n"
                 "Exemplo de estrutura:\n"
                 + exemplo_json + "\n\n"
