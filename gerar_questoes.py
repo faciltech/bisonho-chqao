@@ -68,7 +68,8 @@ def processar_todos_pdfs():
             prompt = (
                 "Atue como uma banca examinadora do Exército Brasileiro elaborando prova para o CHQAO.\n"
                 "Com base EXCLUSIVAMENTE no texto regulatório abaixo, elabore 30 questões inéditas de múltipla escolha.\n\n"
-                "Retorne APENAS um JSON puro (sem blocos de código markdown como ```json) no seguinte formato exato de lista:\n"
+                "Retorne APENAS um JSON puro em formato de lista contendo os campos: texto, opcoes (array com 4 strings), respostaCorreta e fundamentacao.\n"
+                "Exemplo de estrutura:\n"
                 + exemplo_json + "\n\n"
                 "TEXTO BASE:\n"
                 + bloco
@@ -81,26 +82,34 @@ def processar_todos_pdfs():
                 )
                 
                 texto_resposta = response.text.strip()
-                if texto_resposta.startswith("```"):
-                    texto_resposta = texto_resposta.split("```")[1]
-                    if texto_resposta.startswith("json"):
-                        texto_resposta = texto_resposta[4:]
-                texto_resposta = texto_resposta.strip()
+                print(f"Resposta recebida da IA (tamanho: {len(texto_resposta)} caracteres)")
+                
+                if "```json" in texto_resposta:
+                    texto_resposta = texto_resposta.split("```json")[1].split("```")[0].strip()
+                elif "```" in texto_resposta:
+                    texto_resposta = texto_resposta.split("```")[1].split("```")[0].strip()
 
                 resultado = json.loads(texto_resposta)
                 
                 if isinstance(resultado, list):
+                    adicionadas = 0
                     for q in resultado:
                         if "texto" in q and "opcoes" in q and "respostaCorreta" in q:
-                            if q["respostaCorreta"] in q["opcoes"]:
-                                q["id"] = proximo_id
-                                banco_atual.append(q)
-                                proximo_id += 1
+                            q["id"] = proximo_id
+                            banco_atual.append(q)
+                            proximo_id += 1
+                            adicionadas += 1
+                    print(f"Adicionadas {adicionadas} questões ao banco.")
             except Exception as e:
-                print(f"Erro ao processar bloco com IA: {e}")
+                print(f"Erro ao processar bloco com IA ou converter JSON: {e}")
 
         nome_arquivo = os.path.basename(caminho_pdf)
-        shutil.move(caminho_pdf, os.path.join(PASTA_SAIDA, nome_arquivo))
+        # Move de volta para novos caso queira reprocessar, ou mantém em processados se preferir. 
+        # Vamos garantir que o arquivo seja copiado/movido corretamente:
+        destino = os.path.join(PASTA_SAIDA, nome_arquivo)
+        if os.path.exists(destino):
+            os.remove(destino)
+        shutil.move(caminho_pdf, destino)
 
     with open(ARQUIVO_SAIDA, "w", encoding="utf-8") as f:
         json.dump(banco_atual, f, ensure_ascii=False, indent=4)
