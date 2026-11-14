@@ -39,15 +39,14 @@ def processar_todos_pdfs():
         reader = PdfReader(caminho_pdf)
         texto_acumulado = ""
         
-        for i, page in enumerate(reader.pages):
+        for page in reader.pages:
             texto_pagina = page.extract_text() or ""
             texto_acumulado += texto_pagina + "\n"
             
         print(f"Total de caracteres extraídos do PDF: {len(texto_acumulado)}")
         
         if len(texto_acumulado.strip()) < 50:
-            print("AVISO CRÍTICO: O PDF parece ser uma imagem digitalizada sem texto selecionável (OCR necessário). O script não pode ler o conteúdo.")
-            # Move o arquivo para processados para não travar o fluxo
+            print("AVISO: O PDF parece ser uma imagem digitalizada sem texto selecionável.")
             nome_arquivo = os.path.basename(caminho_pdf)
             destino = os.path.join(PASTA_SAIDA, nome_arquivo)
             if os.path.exists(destino):
@@ -55,13 +54,12 @@ def processar_todos_pdfs():
             shutil.move(caminho_pdf, destino)
             continue
 
-        # Divide em blocos caso o texto seja muito longo
         blocos = []
         for i in range(0, len(texto_acumulado), 15000):
             blocos.append(texto_acumulado[i:i+15000])
 
         for idx, bloco in enumerate(blocos, 1):
-            print(f"Enviando bloco {idx}/{len(blocos)} para a IA gerar questões...")
+            print(f"Enviando bloco {idx}/{len(blocos)} para a IA gerar o máximo de questões...")
             
             exemplo_json = """[
   {
@@ -77,7 +75,7 @@ def processar_todos_pdfs():
   }
 ]"""
 
-prompt = (
+            prompt = (
                 "Atue como uma banca examinadora do Exército Brasileiro elaborando prova para o CHQAO.\n"
                 "Analise minuciosamente todo o texto regulatório fornecido abaixo e elabore o MAIOR NÚMERO POSSÍVEL de questões inéditas de múltipla escolha (esgote todos os artigos, detalhes, exceções e conceitos importantes do texto).\n\n"
                 "Retorne APENAS um JSON puro em formato de lista contendo os campos: texto, opcoes (array com 4 strings), respostaCorreta e fundamentacao.\n"
