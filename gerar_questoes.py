@@ -82,6 +82,8 @@ def processar_todos_pdfs():
                 )
                 
                 texto_resposta = response.text.strip()
+                print(f"RESPOSTA BRUTA DA IA:\n{texto_resposta[:500]}...") # Mostra o início da resposta nos logs
+
                 if "```json" in texto_resposta:
                     texto_resposta = texto_resposta.split("```json")[1].split("```")[0].strip()
                 elif "```" in texto_resposta:
@@ -90,13 +92,18 @@ def processar_todos_pdfs():
                 resultado = json.loads(texto_resposta)
                 
                 if isinstance(resultado, list):
+                    adicionadas = 0
                     for q in resultado:
                         if "texto" in q and "opcoes" in q and "respostaCorreta" in q:
                             q["id"] = proximo_id
                             banco_atual.append(q)
                             proximo_id += 1
+                            adicionadas += 1
+                    print(f"Sucesso! {adicionadas} questões adicionadas deste bloco.")
+                else:
+                    print("Aviso: A resposta da IA não é uma lista JSON válida.")
             except Exception as e:
-                print(f"Erro ao processar bloco com IA ou converter JSON: {e}")
+                print(f"ERRO ao processar bloco com IA ou converter JSON: {e}")
 
         nome_arquivo = os.path.basename(caminho_pdf)
         destino = os.path.join(PASTA_SAIDA, nome_arquivo)
