@@ -27,7 +27,8 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git pull origin main --rebase || true
+          git fetch origin main
+          git reset --mixed origin/main || true
           git add questoes.json pdfs_novos/ pdfs_processados/
           git diff --staged --quiet || git commit -m "Atualiza banco de questões e processa PDFs"
-          git push
+          git push origin main || git push origin HEAD:main --force
