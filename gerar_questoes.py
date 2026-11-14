@@ -69,9 +69,9 @@ def processar_todos_pdfs():
                 "Atue como uma banca examinadora do Exército Brasileiro elaborando prova para o CHQAO.\n"
                 "Com base EXCLUSIVAMENTE no texto regulatório abaixo, elabore 30 questões inéditas de múltipla escolha.\n\n"
                 "Retorne APENAS um JSON puro (sem blocos de código markdown como ```json) no seguinte formato exato de lista:\n"
-                f"{exemplo_json}\n\n"
+                + exemplo_json + "\n\n"
                 "TEXTO BASE:\n"
-                f"{bloco}"
+                + bloco
             )
 
             try:
