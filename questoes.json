@@ -70,5 +70,17 @@
         ],
         "respostaCorreta": "Alternativa A",
         "fundamentacao": "Teste de funcionamento do workflow."
+    },
+    {
+        "id": 7,
+        "texto": "Questão de teste gerada automaticamente pelo GitHub Actions.",
+        "opcoes": [
+            "Alternativa A",
+            "Alternativa B",
+            "Alternativa C",
+            "Alternativa D"
+        ],
+        "respostaCorreta": "Alternativa A",
+        "fundamentacao": "Teste de funcionamento do workflow."
     }
 ]
