@@ -1,120 +1,34 @@
-import glob
 import json
 import os
-import shutil
-from google import genai
-from pypdf import PdfReader
 
-CHAVE_API = os.environ.get("GEMINI_API_KEY")
 ARQUIVO_SAIDA = "questoes.json"
-PASTA_ENTRADA = "pdfs_novos"
-PASTA_SAIDA = "pdfs_processados"
 
-if not CHAVE_API:
-    raise ValueError("A variavel GEMINI_API_KEY nao foi configurada nos Secrets do GitHub.")
-
-client = genai.Client(api_key=CHAVE_API)
-
-def carregar_banco_existente():
+def testar_atualizacao():
+    # Carrega banco atual ou cria lista vazia
+    banco = []
     if os.path.exists(ARQUIVO_SAIDA):
         with open(ARQUIVO_SAIDA, "r", encoding="utf-8") as f:
             try:
-                return json.load(f)
-            except json.JSONDecodeError:
-                return []
-    return []
+                banco = json.load(f)
+            except:
+                banco = []
 
-def processar_todos_pdfs():
-    pdfs = glob.glob(os.path.join(PASTA_ENTRADA, "*.pdf"))
-    if not pdfs:
-        print("Nenhum PDF novo encontrado.")
-        return
+    # Adiciona uma questão de teste para provar que o salvamento funciona
+    nova_questao = {
+        "id": len(banco) + 1,
+        "texto": "Questão de teste gerada automaticamente pelo GitHub Actions.",
+        "opcoes": ["Alternativa A", "Alternativa B", "Alternativa C", "Alternativa D"],
+        "respostaCorreta": "Alternativa A",
+        "fundamentacao": "Teste de funcionamento do workflow."
+    }
+    
+    banco.append(nova_questao)
 
-    banco_atual = carregar_banco_existente()
-    proximo_id = len(banco_atual) + 1
-    os.makedirs(PASTA_SAIDA, exist_ok=True)
-
-    for caminho_pdf in pdfs:
-        print(f"Processando: {caminho_pdf}")
-        reader = PdfReader(caminho_pdf)
-        texto_acumulado = ""
-        blocos = []
-
-        for page in reader.pages:
-            texto_acumulado += (page.extract_text() or "") + "\n"
-            if len(texto_acumulado) >= 15000:
-                blocos.append(texto_acumulado)
-                texto_acumulado = ""
-        if texto_acumulado.strip():
-            blocos.append(texto_acumulado)
-
-        for idx, bloco in enumerate(blocos, 1):
-            print(f"Gerando lote de questões do bloco {idx}/{len(blocos)}...")
-            
-            exemplo_json = """[
-  {
-    "texto": "Enunciado da questão aqui?",
-    "opcoes": [
-      "Alternativa A",
-      "Alternativa B",
-      "Alternativa C",
-      "Alternativa D"
-    ],
-    "respostaCorreta": "Alternativa A",
-    "fundamentacao": "Artigo X do regulamento."
-  }
-]"""
-
-            prompt = (
-                "Atue como uma banca examinadora do Exército Brasileiro elaborando prova para o CHQAO.\n"
-                "Com base EXCLUSIVAMENTE no texto regulatório abaixo, elabore 30 questões inéditas de múltipla escolha.\n\n"
-                "Retorne APENAS um JSON puro em formato de lista contendo os campos: texto, opcoes (array com 4 strings), respostaCorreta e fundamentacao.\n"
-                "Exemplo de estrutura:\n"
-                + exemplo_json + "\n\n"
-                "TEXTO BASE:\n"
-                + bloco
-            )
-
-            try:
-                response = client.models.generate_content(
-                    model="gemini-2.0-flash",
-                    contents=prompt
-                )
-                
-                texto_resposta = response.text.strip()
-                print(f"Resposta recebida da IA (tamanho: {len(texto_resposta)} caracteres)")
-                
-                if "```json" in texto_resposta:
-                    texto_resposta = texto_resposta.split("```json")[1].split("```")[0].strip()
-                elif "```" in texto_resposta:
-                    texto_resposta = texto_resposta.split("```")[1].split("```")[0].strip()
-
-                resultado = json.loads(texto_resposta)
-                
-                if isinstance(resultado, list):
-                    adicionadas = 0
-                    for q in resultado:
-                        if "texto" in q and "opcoes" in q and "respostaCorreta" in q:
-                            q["id"] = proximo_id
-                            banco_atual.append(q)
-                            proximo_id += 1
-                            adicionadas += 1
-                    print(f"Adicionadas {adicionadas} questões ao banco.")
-            except Exception as e:
-                print(f"Erro ao processar bloco com IA ou converter JSON: {e}")
-
-        nome_arquivo = os.path.basename(caminho_pdf)
-        # Move de volta para novos caso queira reprocessar, ou mantém em processados se preferir. 
-        # Vamos garantir que o arquivo seja copiado/movido corretamente:
-        destino = os.path.join(PASTA_SAIDA, nome_arquivo)
-        if os.path.exists(destino):
-            os.remove(destino)
-        shutil.move(caminho_pdf, destino)
-
+    # Salva o arquivo JSON
     with open(ARQUIVO_SAIDA, "w", encoding="utf-8") as f:
-        json.dump(banco_atual, f, ensure_ascii=False, indent=4)
+        json.dump(banco, f, ensure_ascii=False, indent=4)
 
-    print(f"Processo finalizado. Total no banco: {len(banco_atual)} questões.")
+    print(f"Sucesso! Total de questões no banco agora: {len(banco)}")
 
 if __name__ == "__main__":
-    processar_todos_pdfs()
+    testar_atualizacao()
