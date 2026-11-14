@@ -27,7 +27,7 @@ def carregar_banco_existente():
 def processar_todos_pdfs():
     pdfs = glob.glob(os.path.join(PASTA_ENTRADA, "*.pdf"))
     if not pdfs:
-        print("Nenhum PDF novo encontrado.")
+        print("Nenhum PDF novo encontrado na pasta.")
         return
 
     banco_atual = carregar_banco_existente()
@@ -35,21 +35,33 @@ def processar_todos_pdfs():
     os.makedirs(PASTA_SAIDA, exist_ok=True)
 
     for caminho_pdf in pdfs:
-        print(f"Processando: {caminho_pdf}")
+        print(f"Processando arquivo: {caminho_pdf}")
         reader = PdfReader(caminho_pdf)
         texto_acumulado = ""
-        blocos = []
+        
+        for i, page in enumerate(reader.pages):
+            texto_pagina = page.extract_text() or ""
+            texto_acumulado += texto_pagina + "\n"
+            
+        print(f"Total de caracteres extraídos do PDF: {len(texto_acumulado)}")
+        
+        if len(texto_acumulado.strip()) < 50:
+            print("AVISO CRÍTICO: O PDF parece ser uma imagem digitalizada sem texto selecionável (OCR necessário). O script não pode ler o conteúdo.")
+            # Move o arquivo para processados para não travar o fluxo
+            nome_arquivo = os.path.basename(caminho_pdf)
+            destino = os.path.join(PASTA_SAIDA, nome_arquivo)
+            if os.path.exists(destino):
+                os.remove(destino)
+            shutil.move(caminho_pdf, destino)
+            continue
 
-        for page in reader.pages:
-            texto_acumulado += (page.extract_text() or "") + "\n"
-            if len(texto_acumulado) >= 15000:
-                blocos.append(texto_acumulado)
-                texto_acumulado = ""
-        if texto_acumulado.strip():
-            blocos.append(texto_acumulado)
+        # Divide em blocos caso o texto seja muito longo
+        blocos = []
+        for i in range(0, len(texto_acumulado), 15000):
+            blocos.append(texto_acumulado[i:i+15000])
 
         for idx, bloco in enumerate(blocos, 1):
-            print(f"Gerando lote de questões do bloco {idx}/{len(blocos)}...")
+            print(f"Enviando bloco {idx}/{len(blocos)} para a IA gerar questões...")
             
             exemplo_json = """[
   {
@@ -82,7 +94,7 @@ def processar_todos_pdfs():
                 )
                 
                 texto_resposta = response.text.strip()
-                print(f"RESPOSTA BRUTA DA IA:\n{texto_resposta[:500]}...") # Mostra o início da resposta nos logs
+                print(f"Resposta bruta recebida do Gemini (tamanho: {len(texto_resposta)})")
 
                 if "```json" in texto_resposta:
                     texto_resposta = texto_resposta.split("```json")[1].split("```")[0].strip()
@@ -99,11 +111,11 @@ def processar_todos_pdfs():
                             banco_atual.append(q)
                             proximo_id += 1
                             adicionadas += 1
-                    print(f"Sucesso! {adicionadas} questões adicionadas deste bloco.")
+                    print(f"Sucesso! {adicionadas} questões adicionadas ao banco.")
                 else:
-                    print("Aviso: A resposta da IA não é uma lista JSON válida.")
+                    print("Aviso: A resposta da IA não retornou uma lista JSON válida.")
             except Exception as e:
-                print(f"ERRO ao processar bloco com IA ou converter JSON: {e}")
+                print(f"ERRO ao processar com a IA ou converter JSON: {e}")
 
         nome_arquivo = os.path.basename(caminho_pdf)
         destino = os.path.join(PASTA_SAIDA, nome_arquivo)
@@ -114,7 +126,7 @@ def processar_todos_pdfs():
     with open(ARQUIVO_SAIDA, "w", encoding="utf-8") as f:
         json.dump(banco_atual, f, ensure_ascii=False, indent=4)
 
-    print(f"Processo finalizado. Total no banco: {len(banco_atual)} questões.")
+    print(f"Processo finalizado. Total geral no banco: {len(banco_atual)} questões.")
 
 if __name__ == "__main__":
     processar_todos_pdfs()
