@@ -82,5 +82,89 @@
         ],
         "respostaCorreta": "Alternativa A",
         "fundamentacao": "Teste de funcionamento do workflow."
+    },
+    {
+        "texto": "Com base na seção biográfica 'Sobre o autor', constante na obra, assinale a alternativa que apresenta corretamente a graduação de Eduardo Amaral e o título do livro de sua autoria publicado em 2025 pela WB Editora:",
+        "opcoes": [
+            "Graduação em Redes de Computadores e autoria do livro 'Shell Script para OSINT'.",
+            "Graduação em Ciência da Computação e autoria do livro 'Investigação Cibernética em Fontes Abertas'.",
+            "Graduação em Segurança da Informação e autoria do livro 'Python para Inteligência Digital'.",
+            "Graduação em Engenharia de Software e autoria do livro 'Perícia Forense em Redes Sociais'."
+        ],
+        "respostaCorreta": "Graduação em Redes de Computadores e autoria do livro 'Shell Script para OSINT'.",
+        "fundamentacao": "Conforme a seção 'Sobre o autor' (p. 6): 'É graduado em Redes de Computadores (...) Autor do livro Shell Script para OSINT, publicado em 2025 pela WB Editora, dedica-se à disseminação de conhecimento técnico...'",
+        "id": 8
+    },
+    {
+        "texto": "De acordo com o sumário da obra, o Capítulo 13 descreve uma metodologia estruturada de investigação dividida em cinco etapas sequenciais. Assinale a alternativa que apresenta a correta correspondência dessas etapas:",
+        "opcoes": [
+            "O – Organizar; D – Documentar; P – Pivotar; A – Analisar; R – Relatar.",
+            "O – Observar; D – Descrever; P – Planejar; A – Auditar; R – Rastrear.",
+            "O – Obter; D – Decodificar; P – Processar; A – Avaliar; R – Registrar.",
+            "O – Operar; D – Detalhar; P – Pesquisar; A – Apurar; R – Revisar."
+        ],
+        "respostaCorreta": "O – Organizar; D – Documentar; P – Pivotar; A – Analisar; R – Relatar.",
+        "fundamentacao": "No sumário da obra (p. 8-9), o capítulo 13 está estruturado nas seguintes seções: '13.1. O – Organizar', '13.2. D – Documentar', '13.3. P – Pivotar', '13.4. A – Analisar' e '13.5. R – Relatar'.",
+        "id": 9
+    },
+    {
+        "texto": "Conforme o sumário do livro, o Capítulo 12 destina-se ao estudo de 'Ferramentas de terminal para análise do TikTok'. Quais ferramentas do repositório GitHub são especificamente tratadas nesse capítulo?",
+        "opcoes": [
+            "TikSpyder e Clawk.",
+            "TikTokOSINT e WebSpyder.",
+            "TerminalTok e PyClawk.",
+            "GitTik e SpyderHawk."
+        ],
+        "respostaCorreta": "TikSpyder e Clawk.",
+        "fundamentacao": "No sumário (p. 8), o item 12 estabelece: '12. Ferramentas de terminal para análise do TikTok', subdividindo-se em '12.1. TikSpyder – GitHub Tool' e '12.2. Clawk – GitHub Tool'.",
+        "id": 10
+    },
+    {
+        "texto": "No contexto da extração de metadados temporais em investigações no TikTok, o texto estabelece que, para localizar a data exata da publicação de uma postagem no código-fonte, o investigador deve pesquisar por uma tag específica, cujo valor numérico precisará ser convertido. Assinale a alternativa que indica corretamente essa tag e o formato nativo do dado fornecido pela plataforma.",
+        "opcoes": [
+            "Tag “create_time”, fornecida em formato UTC militar.",
+            "Tag “createTime”, fornecida em formato Unix timestamp.",
+            "Tag “post_created”, fornecida em formato ISO 8601.",
+            "Tag “timestamp_exact”, fornecida em formato Epoch hexadecimal."
+        ],
+        "respostaCorreta": "Tag “createTime”, fornecida em formato Unix timestamp.",
+        "fundamentacao": "Conforme o item 8 ('Extração de timestamps e metadados precisos') e o subitem 8.1 ('Encontrando a data exata de postagens'), o TikTok fornece timestamps em formato Unix que precisam ser convertidos, devendo o investigador ir até o código-fonte e pesquisar pela tag “createTime”.",
+        "id": 11
+    },
+    {
+        "texto": "Ao utilizar ferramentas como as extensões para Chrome TTExporter ou TTCommentExporter, destinadas à extração de seguidores e comentários, o texto prescreve uma recomendação fundamental de segurança. Assinale a alternativa que reproduz corretamente essa orientação.",
+        "opcoes": [
+            "Executar as extensões exclusivamente por linha de comando em ambiente virtual Python.",
+            "Jamais realizar login na plataforma, sob pena de bloqueio imediato do IP do analista.",
+            "Utilizar a conta de um Agente Virtual de Investigação (AVI), jamais utilizando a conta particular.",
+            "Configurar obrigatoriamente a chave SerpAPI para mascarar as credenciais pessoais."
+        ],
+        "respostaCorreta": "Utilizar a conta de um Agente Virtual de Investigação (AVI), jamais utilizando a conta particular.",
+        "fundamentacao": "Nos subitens 9.2 ('Extração de seguidores do Tiktok') e 9.3 ('Extração de comentários'), destaca-se que as ferramentas exigem login e que, por essa razão, 'é importante que, neste caso, você use a conta de um AVI (Agente Virtual de Investigação) para as suas investigações. Jamais use a sua conta particular'.",
+        "id": 12
+    },
+    {
+        "texto": "De acordo com o texto, os sites espelhos consistem em réplicas de perfis que armazenam dados capturados em diferentes momentos. A respeito das características, vantagens e ferramentas associadas aos sites espelhos, assinale a alternativa correta.",
+        "opcoes": [
+            "O Tikvib disponibiliza versão em português e análise avançada de engajamento.",
+            "A ausência de informações desatualizadas constitui uma das principais vantagens dos sites espelhos.",
+            "O Urlebird apresenta versão em português, histórico de postagens e análise de engajamento.",
+            "Todos os perfis existentes na rede são compulsoriamente capturados por ferramentas como o Tikface."
+        ],
+        "respostaCorreta": "O Urlebird apresenta versão em português, histórico de postagens e análise de engajamento.",
+        "fundamentacao": "No item 10.3 ('Principais sites espelhos'), o site Urlebird é descrito explicitamente com as características: 'Versão em português', 'Informações detalhadas', 'Histórico de postagens' e 'Análise de engajamento'.",
+        "id": 13
+    },
+    {
+        "texto": "Com relação à ferramenta TikSpyder descrita no texto, assinale a alternativa que apresenta corretamente um de seus comandos de inicialização e seus requisitos técnicos declarados.",
+        "opcoes": [
+            "Inicia sua interface gráfica pelo comando “streamlit run app.py” e requer Python >= 3.11.7.",
+            "Inicia sua linha de comando por “source venv/bin/activate” e requer Python legado <= 3.10.",
+            "Opera exclusivamente em modo texto por meio de “nano config/config.ini” e requer Apify API token obrigatório.",
+            "Executa a coleta de dados via “git clone” com exigência estrita de sistema operacional Windows 11."
+        ],
+        "respostaCorreta": "Inicia sua interface gráfica pelo comando “streamlit run app.py” e requer Python >= 3.11.7.",
+        "fundamentacao": "No subitem 12.1 ('TikSpyder – GitHub Tool'), consta que a interface gráfica pode ser iniciada pelo comando 'streamlit run app.py' e, na lista de requisitos técnicos, exige-se 'Python >= 3.11.7'.",
+        "id": 14
     }
 ]
