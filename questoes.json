@@ -4546,7 +4546,188 @@
       "Matriz de riscos. 47 / 48 CHQAO 2026 Prova de 09 de outubro de 2026"
     ],
     "respostaCorreta": "Projeto executivo.",
-    "fundamentacao": "Caderno CHQAO 2026 - Questão 70",
+    "fundamentacao": "",
     "id": 350
-  }
+  },
+
+{
+"enunciado": "Com base no Regulamento de Administração do Exército (RAE, EB10-R-01.003), assinale a alternativa correta a respeito da finalidade e das prescrições do regulamento.",
+"alternativas": [
+"A) O RAE estabelece prescrições pormenorizadas e exclusivas sobre a gestão orçamentária e financeira, esgotando todas as normas de contabilidade sem necessidade de legislação complementar.",
+"B) As atividades administrativas em campanha regulam-se estritamente pelas disposições fixadas no texto permanente do RAE, vedando-se o uso de manuais de campanha.",
+"C) O RAE tem por finalidade estabelecer os preceitos gerais para as atividades administrativas do Comando do Exército.",
+"D) O RAE aplica-se exclusivamente às Organizações Militares sem autonomia administrativa, sendo as demais regidas por leis federais genéricas.",
+"E) O Comando do Exército subordina administrativamente suas atividades de forma autônoma e independente em relação à Administração Pública Direta da União."
+],
+"respostaCorreta": "C",
+"fundamentacao": "Art. 1º do RAE: O Regulamento de Administração do Exército (RAE), EB10-R-01.003, tem por finalidade estabelecer os preceitos gerais para as atividades administrativas do Comando do Exército."
+},
+{
+"enunciado": "De acordo com as conceituações básicas trazidas pelo Art. 2º do RAE, analise os conceitos apresentados e assinale a alternativa incorreta.",
+"alternativas": [
+"A) Adiantamento ou suprimento de fundos é a designação genérica para entrega de numerário a servidor, precedida de empenho, para realização de despesas que, pela excepcionalidade, não possam subordinar-se ao processo normal.",
+"B) Ato administrativo é a manifestação de vontade da Administração Pública que tem por objetivo a produção de efeitos jurídicos e, no âmbito da contabilidade, decorre obrigatoriamente alteração do patrimônio.",
+"C) Autonomia administrativa é a competência atribuída a uma organização militar para a prática de atos e fatos contábeis e administrativos decorrentes da gestão de bens e valores da União e de terceiros.",
+"D) Fato administrativo são eventos materiais que repercutem na esfera jurídico-administrativa e, no âmbito da contabilidade, dele decorre alteração do patrimônio.",
+"E) Unidade Gestora (UG) é a organização militar cadastrada no SIAFI, investida do poder de gerir recursos orçamentários, financeiros e/ou patrimoniais."
+],
+"respostaCorreta": "B",
+"fundamentacao": "Art. 2º, inciso VIII do RAE: ato administrativo é a manifestação de vontade da Administração Pública que (...) no âmbito da contabilidade, não decorre alteração do patrimônio (o que caracteriza alteração patrimonial é o fato administrativo, conforme o inciso XVIII)."
+},
+{
+"enunciado": "No tocante às definições de responsabilidade solidária e subsidiária previstas no art. 2º do RAE, assinale a assertiva correta.",
+"alternativas": [
+"A) A responsabilidade subsidiária ocorre quando há multiplicidade de devedores, respondendo cada titular pela totalidade da dívida de forma isolada.",
+"B) A responsabilidade solidária possui caráter acessório ou suplementar, exigindo ordem a ser observada para cobrar a dívida.",
+"C) A responsabilidade subsidiária só pode ser acionada após o devedor principal não ter adimplido totalmente a dívida, tendo caráter acessório ou suplementar.",
+"D) Tanto a responsabilidade solidária quanto a subsidiária isentam o direito de regresso aos demais devedores envolvidos.",
+"E) Na responsabilidade solidária, o devedor secundário é acionado prioritariamente antes do devedor principal."
+],
+"respostaCorreta": "C",
+"fundamentacao": "Art. 2º, inciso XXVIII do RAE: responsabilidade subsidiária - ocorre quando há uma ordem a ser observada para cobrar a dívida, na qual o devedor subsidiário só pode ser acionado após aquela não ter sido totalmente adimplida pelo devedor principal, tendo caráter acessório ou suplementar."
+},
+{
+"enunciado": "Em relação à estrutura administrativa das Organizações Militares (OM) disposta no Capítulo II do RAE, assinale a opção correta.",
+"alternativas": [
+"A) OM valor unidade é toda estrutura cujo comando é privativo de oficial general ou oficial superior, exceto as subunidades independentes.",
+"B) A OM com autonomia administrativa plena é a cadastrada no SIAFI com CODUG, com competência para atos de gestão orçamentária, financeira, patrimonial e de pessoal, cujo titular está sujeito à prestação de contas do art. 70, parágrafo único, da CF/88.",
+"C) A OM sem autonomia administrativa é aquela que executa atos parciais de gestão, estando vinculada a uma OM com autonomia administrativa parcial.",
+"D) Toda OM no âmbito do Exército possui obrigatoriamente autonomia administrativa parcial perante o SIASG.",
+"E) A denominação UASG aplica-se exclusivamente às organizações militares criadas por decreto presidencial de valor superior a unidade."
+],
+"respostaCorreta": "B",
+"fundamentacao": "Art. 9º, § 4º do RAE define detalhadamente a OM com autonomia administrativa plena, contemplando os requisitos citados na alternativa B."
+},
+{
+"enunciado": "Sobre a criação, transformação e extinção de Organizações Militares (OM) no âmbito do Exército, assinale a alternativa que indica corretamente a competência legal:",
+"alternativas": [
+"A) A criação de OM de valor inferior a unidade é da competência privativa do Presidente da República.",
+"B) A extinção de OM de valor superior a unidade é processada por ato presidencial, mediante proposta do Comandante do Exército, por intermédio do Ministro de Estado da Defesa.",
+"C) A transformação de OM de valor unidade é processada exclusivamente por portaria do Chefe do Estado-Maior do Exército (EME).",
+"D) A localização de sede de qualquer OM, independentemente do seu valor, é de competência exclusiva do Comandante da Região Militar.",
+"E) Os atos de criação e organização de uma OM serão transcritos obrigatoriamente no Boletim do Exército (BE), dispensando transcrição em boletim interno."
+],
+"respostaCorreta": "B",
+"fundamentacao": "Art. 10 do RAE: A criação, localização de sede, subordinação, transformação e extinção de OM de valor superior a unidade são processadas por ato presidencial, mediante proposta do Comandante do Exército, por intermédio do Ministro de Estado da Defesa."
+},
+{
+"enunciado": "Com relação à delegação de competência regulada no art. 20 do RAE, assinale a afirmativa correta.",
+"alternativas": [
+"A) A delegação de competência no âmbito do Comando do Exército poderá ser realizada para militar de maior ou igual precedência hierárquica que o delegante.",
+"B) O prazo de vigência da delegação será obrigatoriamente determinado, extinguindo-se de pleno direito após 1 (um) ano.",
+"C) O ato de delegação poderá ser revogado a qualquer tempo pela autoridade delegante.",
+"D) É terminantemente proibida a subdelegação de competência no âmbito do Comando do Exército.",
+"E) A delegação de competência da função de Ordenador de Despesas (OD) dispensa regulação em legislação específica, sendo livremente delegável a qualquer servidor."
+],
+"respostaCorreta": "C",
+"fundamentacao": "Art. 20, § 4º do RAE: O ato de delegação poderá ser revogado a qualquer tempo pela autoridade delegante."
+},
+{
+"enunciado": "No que concerne aos agentes da administração e suas atribuições fundamentais previstas no Capítulo III do RAE, assinale a alternativa correta:",
+"alternativas": [
+"A) O dirigente máximo da OM está isento de responsabilidade pelos atos e fatos administrativos praticados na sua organização caso delegue competências a terceiros.",
+"B) O fiscal administrativo é o responsável direto pela execução das atividades contábeis e financeiras na OM, exercendo a função de tesoureiro.",
+"C) O encarregado do setor de material (almoxarife) é o responsável pela gestão do material recebido, compreendida pela guarda, localização, segurança e preservação.",
+"D) O encarregado da SALC é o agente encarregado exclusivamente de proferir decisões, acompanhar o trâmite da licitação e dar impulso ao certame até a homologação.",
+"E) O agente de contratação responde solidariamente por todos os atos praticados, ainda que induzido a erro pela atuação explícita da equipe de apoio."
+],
+"respostaCorreta": "C",
+"fundamentacao": "Art. 29 do RAE define o encarregado do setor de material (almoxarife) como o responsável pela gestão do material recebido, compreendida guarda, localização, segurança e preservação."
+},
+{
+"enunciado": "Acerca da classificação dos bens patrimoniais da União sob gestão das Organizações Militares, conforme o art. 45 do RAE, assinale a alternativa correta.",
+"alternativas": [
+"A) Quanto à tangibilidade, os bens classificam-se exclusivamente em móveis e imóveis.",
+"B) Material permanente é o item de consumo, peça ou artigo que se destina à aplicação imediata e perde suas características individuais quando utilizado.",
+"C) Bens de alto custo são os avaliados a valor líquido contábil superior a cinco vezes o limite estipulado para aquisições de materiais por dispensa de licitação.",
+"D) Bens intangíveis são aqueles corpóreos que possuem existência material e física, passíveis de toque.",
+"E) Os bens patrimoniais sob gestão de qualquer OM do Comando do Exército pertencem ao patrimônio particular da respectiva Organização Militar."
+],
+"respostaCorreta": "C",
+"fundamentacao": "Art. 45, inciso I, alínea 'a' do RAE: de alto custo - os que forem avaliados a valor líquido contábil superior a cinco vezes o limite estipulado para aquisições de materiais, por meio de dispensa de licitação..."
+},
+{
+"enunciado": "No tocante ao recebimento e exame de material regulado na Seção IV do Capítulo IV do RAE, assinale a opção correta.",
+"alternativas": [
+"A) A Comissão de Recebimento e Exame de Material (CREM) será constituída, no mínimo, por 5 (cinco) oficiais em qualquer situação.",
+"B) A CREM ou o agente executor encarregado do recebimento e exame terá o prazo de 8 (oito) dias úteis para apresentar ao fiscal administrativo o TREM ou o recibo correspondente.",
+"C) Os prazos de recebimento provisório ou definitivo não precisam constar no edital de licitação correspondente.",
+"D) O recebimento definitivo de obras e serviços será realizado obrigatoriamente no prazo máximo de 48 horas da comunicação do contratado.",
+"E) O encarregado do setor de material é proibido de integrar a CREM sob qualquer hipótese, visando à segregação estrita de funções."
+],
+"respostaCorreta": "B",
+"fundamentacao": "Art. 58, § 2º do RAE: A CREM ou o agente executor encarregado do recebimento e exame terá o prazo de 8 (oito) dias úteis para apresentar ao fiscal administrativo o Termo de Recebimento e Exame de Material (TREM)..."
+},
+{
+"enunciado": "Com base no art. 76 e seguintes do RAE sobre a descarga de material, analise as afirmativas e assinale a correta:",
+"alternativas": [
+"A) A descarga de material é ordenada exclusivamente pelo Comandante do Exército, sendo vedada tal atribuição ao Ordenador de Despesas.",
+"B) Nos casos de furto, roubo, peculato, apropriação indébita ou demais delitos contra o patrimônio, será instaurado obrigatoriamente Inquérito Policial Militar (IPM).",
+"C) A descarga de material inservível nunca poderá ser feita de forma direta, exigindo sempre a nomeação prévia de uma comissão especial de inquérito do TCU.",
+"D) Os materiais descarregados por motivo de inservibilidade não podem sob hipótese alguma ter sua matéria-prima reaproveitada.",
+"E) O Termo Circunstanciado Administrativo (TCAdm) pode ser aberto em substituição à sindicância para qualquer valor de prejuízo, desde que haja dolo."
+],
+"respostaCorreta": "B",
+"fundamentacao": "Art. 79, inciso III do RAE: nos casos de furto, roubo, peculato, apropriação indébita ou demais delitos contra o patrimônio, será instaurado IPM."
+},
+{
+"enunciado": "No que diz respeito à movimentação de pessoal e ao ajuste de contas regulados nos arts. 91 e seguintes do RAE, assinale a alternativa correta:",
+"alternativas": [
+"A) A data de ajuste de contas do militar ou servidor civil movimentado será obrigatoriamente o primeiro dia do trânsito.",
+"B) O militar ou servidor civil movimentado, se for de seu interesse, poderá continuar no efetivo de pagamento da OM de origem até o mês correspondente ao último dia do trânsito.",
+"C) Na falta de recursos para ajuda de custo, o movimentado não poderá permanecer adido à OM, devendo seguir destino sem qualquer apoio.",
+"D) A ajuda de custo e as indenizações decorrentes de movimentação são pagas com base nos valores vigentes na data da publicação do ato, vedada qualquer atualização.",
+"E) O desligamento do militar movimentado efetivar-se-á antes mesmo de liberado o Próprio Nacional Residencial (PNR), independentemente de normas do órgão gestor."
+],
+"respostaCorreta": "B",
+"fundamentacao": "Art. 92, § 2º do RAE: O militar ou servidor civil, quando movimentado, se for de seu interesse, poderá continuar no efetivo de pagamento da OM de origem, até o mês correspondente ao último dia do trânsito."
+},
+{
+"enunciado": "Sobre o regime de responsabilidades dos agentes da administração previsto no Capítulo V do RAE, analise a assertiva correta:",
+"alternativas": [
+"A) A responsabilidade civil do agente público isenta-o completamente de qualquer sanção administrativa ou criminal relativa ao mesmo evento.",
+"B) Os débitos resultantes de responsabilidade civil anulam-se integralmente pela absolvição administrativa ou criminal em qualquer hipótese.",
+"C) Os recursos interpostos pelos responsáveis para suspensão de débitos resultantes de apuração de responsabilidades sustam imediatamente os descontos em suas remunerações.",
+"D) A responsabilidade civil imputada ao agente ou auxiliar culpado acarretará o ressarcimento dos danos ou prejuízos causados à União ou a terceiros, com as cominações legais.",
+"E) O subordinado que cumprir ordem por escrito após ter feito ponderações fundamentadas continua responsável solidário pelos prejuízos causados."
+],
+"respostaCorreta": "D",
+"fundamentacao": "Art. 99, § 2º do RAE: A responsabilidade civil imputada ao agente ou auxiliar culpado acarretará o ressarcimento dos danos ou prejuízos causados à União ou a terceiros, com as cominações legais."
+},
+{
+"enunciado": "De acordo com o art. 116 e seguintes do RAE, que tratam da responsabilidade pessoal dos agentes da administração, assinale a opção correta:",
+"alternativas": [
+"A) Quando o dirigente máximo decidir com base em informação ou parecer de agente da administração, ambos compartilharão da responsabilidade, salvo se comprovado que o parecer foi incompleto ou inverídico, hipótese em que a responsabilidade recairá apenas no seu autor.",
+"B) O dirigente máximo responde objetivamente e integralmente por todos os atos praticados por subordinados, ainda que estes se desviam totalmente das ordens recebidas.",
+"C) O agente da administração pode ser responsabilizado por suas opiniões técnicas mesmo quando atuar sem dolo ou erro grosseiro.",
+"D) Os militares e servidores civis que subscrevem documentos em sistemas informatizados não respondem pela autenticidade das informações neles contidas, sendo responsabilidade exclusiva do analista de sistemas.",
+"E) Os agentes encarregados de conferir documentos administrativos estão isentos de responsabilidade por exatidão de cálculos inseridos por terceiros."
+],
+"respostaCorreta": "A",
+"fundamentacao": "Art. 116 do RAE: Quando o dirigente máximo decidir, tendo por base informação ou parecer de agente da administração, ambos compartilharão da responsabilidade. § 1º Ficando comprovada que a informação ou parecer foi incompleto ou inverídico, a responsabilidade recairá apenas no autor da informação ou parecer."
+},
+{
+"enunciado": "A respeito dos prazos para a passagem de material, transmissão de encargos e de valores estabelecidos no art. 131 do RAE, assinale a alternativa que apresenta o prazo correto para os Ordenadores de Despesas (OD), fiscais administrativos, comandantes de Subunidade (SU) e encarregados do setor financeiro:",
+"alternativas": [
+"A) Até 4 (quatro) dias úteis.",
+"B) Até 10 (dez) dias úteis.",
+"C) Até 20 (vinte) dias úteis.",
+"D) Até 30 (trinta) dias corridos.",
+"E) Prazo indeterminado, a critério do Comandante da Região Militar."
+],
+"respostaCorreta": "B",
+"fundamentacao": "Art. 131, inciso II do RAE: até 10 (dez) dias úteis para os OD, fiscais administrativos, comandantes de SU e encarregados de setor financeiro."
+},
+{
+"enunciado": "No que tange aos casos fortuitos ou de força maior que podem isentar de responsabilidade os agentes da administração, conforme o art. 135 do RAE, assinale a alternativa que descreve corretamente uma situação prevista no regulamento:",
+"alternativas": [
+"A) Dano causado por negligência manifesta e reiterada do encarregado de material.",
+"B) Prejuízos decorrentes de falhas administrativas ordinárias cometidas por dolo.",
+"C) Incêndio, desmoronamento, inundação, submersão, tormenta, terremoto e sinistros terrestres, aéreos, fluviais e marítimos.",
+"D) Inadimplência voluntária de contratos firmados com particulares sem comprovação de sinistro.",
+"E) Extravio de armamento motivado por abandono de posto sem justificativa em sindicância."
+],
+"respostaCorreta": "C",
+"fundamentacao": "Art. 135, inciso I do RAE: Podem ser considerados casos fortuitos ou de força maior... incêndio, desmoronamento, inundação, submersão, tormenta, terremoto e sinistros terrestres, aéreos, fluviais e marítimos."
+}
 ]
