@@ -1,314 +1,909 @@
 [
-    {
-        "texto": "De acordo com o texto introdutório da obra 'TikTok Intelligence – Rastreamento e Investigação Profissional', o termo OSINT (Open Source Intelligence) é conceituado como:",
-        "opcoes": [
-            "A interceptação telemática e quebra de sigilo judicial de dados em redes proprietárias.",
-            "A coleta e análise de informações obtidas em fontes abertas.",
-            "O rastreamento exclusivo de tráfego de rede criptografado via protocolos de terminal.",
-            "A infiltração virtual em perfis fechados por meio de engenharia social ativa."
-        ],
-        "respostaCorreta": "A coleta e análise de informações obtidas em fontes abertas.",
-        "fundamentacao": "Item 1 (Introdução à OSINT, p. 10): 'OSINT (Open Source Intelligence) refere-se à coleta e análise de informações obtidas'.",
-        "id": 1
-    },
-    {
-        "texto": "Na seção 'Sobre o autor', são detalhadas as credenciais acadêmicas e profissionais de Eduardo Amaral. Quanto à sua graduação de nível superior, o autor é formado em:",
-        "opcoes": [
-            "Ciência da Computação.",
-            "Segurança da Informação.",
-            "Redes de Computadores.",
-            "Engenharia de Software."
-        ],
-        "respostaCorreta": "Redes de Computadores.",
-        "fundamentacao": "Seção 'Sobre o autor' (p. 6): 'É graduado em Redes de Computadores e possui pós-graduações em Hacker Ético e Cibernética, Inteligência Cibernética e Inteligência e Investigação em Fontes Abertas (OSINT)'.",
-        "id": 2
-    },
-    {
-        "texto": "Com base na biografia técnica de Eduardo Amaral apresentada na obra, assinale a opção que indica o título do livro de sua autoria publicado no ano de 2025:",
-        "opcoes": [
-            "Shell Script para OSINT.",
-            "Inteligência Cibernética Avançada.",
-            "Investigação Digital em Redes Sociais.",
-            "Fundamentos de Penetration Test e OSINT."
-        ],
-        "respostaCorreta": "Shell Script para OSINT.",
-        "fundamentacao": "Seção 'Sobre o autor' (p. 6): 'Autor do livro Shell Script para OSINT, publicado em 2025 pela WB Editora, dedica-se à disseminação de conhecimento técnico...'.",
-        "id": 3
-    },
-    {
-        "texto": "Dentre as diversas certificações técnicas listadas no perfil profissional do autor, consta a certificação CPME. Essa sigla corresponde a:",
-        "opcoes": [
-            "Certified Professional in Mobile Extraction.",
-            "Certified Practitioner em Microexpressões.",
-            "Cellebrite Physical Malware Examiner.",
-            "Certified PenTester in Mobile Environments."
-        ],
-        "respostaCorreta": "Certified Practitioner em Microexpressões.",
-        "fundamentacao": "Seção 'Sobre o autor' (p. 6): '...além da certificação CPME (Certified Practitioner em Microexpressões)'.",
-        "id": 4
-    },
-    {
-        "texto": "No capítulo 13 do sumário, é apresentada uma metodologia estruturada de investigação dividida em cinco etapas sequenciais. Assinale a alternativa que apresenta a correta correlação das etapas que compõem o mnemônico metodológico:",
-        "opcoes": [
-            "O – Obter; D – Decodificar; P – Processar; A – Armazenar; R – Rastrear.",
-            "O – Observar; D – Diagnosticar; P – Planejar; A – Agir; R – Relatar.",
-            "O – Organizar; D – Documentar; P – Pivotar; A – Analisar; R – Relatar.",
-            "O – Operar; D – Descrever; P – Pesquisar; A – Auditar; R – Revisar."
-        ],
-        "respostaCorreta": "O – Organizar; D – Documentar; P – Pivotar; A – Analisar; R – Relatar.",
-        "fundamentacao": "Capítulo 13 (Sumário, p. 8-9): '13.1. O – Organizar; 13.2. D – Documentar; 13.3. P – Pivotar; 13.4. A – Analisar; 13.5. R – Relatar'.",
-        "id": 5
-    },
-    {
-        "texto": "No Capítulo 12 da obra, dedicado a 'Ferramentas de terminal para análise do TikTok', o autor aborda especificamente duas ferramentas disponibilizadas no GitHub. São elas:",
-        "opcoes": [
-            "TikSpyder e Clawk.",
-            "TikTok-Scraper e Sherlock.",
-            "OSINT-Spy e TikExtract.",
-            "TerminalTok e WebCrawler."
-        ],
-        "respostaCorreta": "TikSpyder e Clawk.",
-        "fundamentacao": "Capítulo 12 (Sumário, p. 8): '12.1. TikSpyder – GitHub Tool; 12.2. Clawk – GitHub Tool'.",
-        "id": 6
-    },
-    {
-        "texto": "No Capítulo 11 do sumário ('Exemplo prático de recuperação de informações de contas deletadas'), é analisado um caso de estudo específico. Qual perfil é utilizado como objeto desse estudo de caso?",
-        "opcoes": [
-            "@itspolokid",
-            "@investigacaotik",
-            "@osintbrasil",
-            "@cyberwarrior"
-        ],
-        "respostaCorreta": "@itspolokid",
-        "fundamentacao": "Capítulo 11 (Sumário, p. 8): '11.1. Caso de estudo: @itspolokid'.",
-        "id": 7
-    },
-    {
-        "texto": "Conforme disposto no sumário da obra, o estudo analítico do código-fonte do TikTok para inteligência foi estruturado em duas partes (Capítulos 5 e 6). Na Parte 1 (Capítulo 5), destaca-se a identificação e coleta de qual elemento fundamental?",
-        "opcoes": [
-            "BioLink.",
-            "User ID.",
-            "Timestamp do primeiro comentário.",
-            "Número de curtidas totais."
-        ],
-        "respostaCorreta": "User ID.",
-        "fundamentacao": "Capítulo 5 (Sumário, p. 7): '5.2. Importância do User ID; 5.3. Como identificar e coletar o User ID'.",
-        "id": 8
-    },
-    {
-        "texto": "Na seção de 'Agradecimentos' da obra, o autor faz uma menção especial a um profissional cuja trajetória e compartilhamento de conhecimento em tecnologia, investigação e segurança da informação serviram de inspiração. Trata-se do:",
-        "opcoes": [
-            "Dr. Emerson Wendt.",
-            "Clebson Ferreira de Paula Vieira.",
-            "Marina dos Anjos Martins de Oliveira.",
-            "Eduardo Amaral."
-        ],
-        "respostaCorreta": "Dr. Emerson Wendt.",
-        "fundamentacao": "Seção 'Agradecimentos' (p. 5): 'Meu agradecimento especial ao meu amigo Dr. Emerson Wendt, cuja trajetória profissional, dedicação ao ensino e compartilhamento de conhecimento servem de inspiração...'.",
-        "id": 9
-    },
-    {
-        "texto": "De acordo com o Capítulo 10 do sumário da obra ('Sites espelhos e recuperação de dados'), qual ferramenta externa consagrada de preservação de histórico da web é especificamente analisada no item 10.4?",
-        "opcoes": [
-            "Archive.today.",
-            "Wayback Machine – Internet Archive.",
-            "Google Cache Viewer.",
-            "GhostArchive."
-        ],
-        "respostaCorreta": "Wayback Machine – Internet Archive.",
-        "fundamentacao": "Capítulo 10 (Sumário, p. 8): '10.4. Wayback Machine – Internet Archive'.",
-        "id": 10
-    },
-    {
-        "texto": "No contexto da investigação em fontes abertas aplicada ao TikTok, o item '16.3. Dicas de eficiência' recomenda expressamente a adoção de determinadas práticas operacionais. Dentre elas, destaca-se:",
-        "opcoes": [
-            "O uso exclusivo de ferramentas proprietárias e pagas para compilação de relatórios.",
-            "A utilização de atalhos de teclado, tais como Ctrl + F e F12.",
-            "A eliminação da documentação de processos para conferir agilidade à coleta de dados.",
-            "A priorização de tarefas manuais em detrimento da automação de rotinas."
-        ],
-        "respostaCorreta": "A utilização de atalhos de teclado, tais como Ctrl + F e F12.",
-        "fundamentacao": "Item 16.3: 'Dicas de eficiência: • Usar atalhos de teclado (Ctrl + F, F12). • Automatizar tarefas repetitivas. • Manter biblioteca de ferramentas. • Documentar processo.'",
-        "id": 11
-    },
-    {
-        "texto": "De acordo com o item 17 ('Conclusão e próximos passos'), a disciplina de OSINT no TikTok é conceituada como uma prática em evolução que combina:",
-        "opcoes": [
-            "Técnicas de engenharia social ativa com invasão de sistemas computacionais.",
-            "Técnicas tradicionais de investigação com ferramentas digitais modernas.",
-            "Coleta exclusiva de metadados com interceptação telemática restrita.",
-            "Protocolos militares de espionagem física com auditoria contábil digital."
-        ],
-        "respostaCorreta": "Técnicas tradicionais de investigação com ferramentas digitais modernas.",
-        "fundamentacao": "Item 17: 'OSINT no TikTok é uma disciplina em evolução que combina técnicas tradicionais de investigação com ferramentas digitais modernas.'",
-        "id": 12
-    },
-    {
-        "texto": "O texto lista seis 'Pontos-chave' essenciais sobre a atividade de OSINT no TikTok. Entre esses pontos, consta explicitamente que:",
-        "opcoes": [
-            "A verificação em múltiplas fontes garante confiabilidade.",
-            "Os dados públicos no TikTok são escassos e de pouca utilidade investigativa.",
-            "O emprego de ferramentas automatizadas deve ser evitado por gerar redundância.",
-            "A documentação é facultativa quando a coleta for realizada por ferramentas analíticas."
-        ],
-        "respostaCorreta": "A verificação em múltiplas fontes garante confiabilidade.",
-        "fundamentacao": "Item 17 (Pontos-chave): '6. Verificação em múltiplas fontes garante confiabilidade.' (O texto também cita que dados são abundantes e valiosos, ferramentas automatizadas aumentam eficiência e documentação é essencial).",
-        "id": 13
-    },
-    {
-        "texto": "Em relação às diretrizes de 'Desenvolvimento contínuo' descritas na seção 17, assinale a alternativa que apresenta uma ação expressamente indicada:",
-        "opcoes": [
-            "Restringir a difusão de conhecimento ao âmbito interno de inteligência.",
-            "Participar de comunidades OSINT.",
-            "Fixar-se no uso de uma ferramenta consolidada para evitar dispersão analítica.",
-            "Limitar a prática a simulações teóricas, evitando o acompanhamento de mudanças."
-        ],
-        "respostaCorreta": "Participar de comunidades OSINT.",
-        "fundamentacao": "Item 17 (Desenvolvimento contínuo): '• Acompanhar mudanças na plataforma. • Aprender novas ferramentas. • Participar de comunidades OSINT. • Compartilhar conhecimento. • Praticar regularmente.'",
-        "id": 14
-    },
-    {
-        "texto": "Na subseção 'Recursos adicionais', foram categorizadas comunidades e ferramentas específicas para apoio ao analista de inteligência. A esse respeito, constam respectivamente como comunidades e como ferramentas:",
-        "opcoes": [
-            "Comunidades: GitHub e Shodan; Ferramentas: Bellingcat e Maltego.",
-            "Comunidades: OSINT Framework e Bellingcat; Ferramentas: GitHub, Shodan e Maltego.",
-            "Comunidades: Maltego e Shodan; Ferramentas: OSINT Framework e TikTok Scan.",
-            "Comunidades: Urlebird e Tikvib; Ferramentas: Epochconverter e DuckDuckGo."
-        ],
-        "respostaCorreta": "Comunidades: OSINT Framework e Bellingcat; Ferramentas: GitHub, Shodan e Maltego.",
-        "fundamentacao": "Item 17 (Recursos adicionais): '• Comunidades: OSINT Framework (...), Bellingcat (...) • Ferramentas: GitHub (...), Shodan (...), Maltego (...)'.",
-        "id": 15
-    },
-    {
-        "texto": "Conforme o Glossário contido no item 18, a sigla 'AVI' é definida expressamente como:",
-        "opcoes": [
-            "Auditoria Virtual de Informações.",
-            "Agente Virtual de Investigação.",
-            "Análise Vetorial de Incidentes.",
-            "Automação e Varredura de Inteligência."
-        ],
-        "respostaCorreta": "Agente Virtual de Investigação.",
-        "fundamentacao": "Item 18 (Glossário): 'AVI. Agente Virtual de Investigação.'",
-        "id": 16
-    },
-    {
-        "texto": "No Glossário da disciplina, o termo 'Dork' é conceituado como:",
-        "opcoes": [
-            "Uma consulta de busca avançada usando operadores especiais.",
-            "Um identificador fixo e inalterável vinculado à base interna do servidor.",
-            "Uma técnica invasiva de extração forçada de bases de dados relacionais.",
-            "Um comando destinado à exclusão de registros de tráfego de rede."
-        ],
-        "respostaCorreta": "Uma consulta de busca avançada usando operadores especiais.",
-        "fundamentacao": "Item 18 (Glossário): 'Dork. Consulta de busca avançada usando operadores especiais.'",
-        "id": 17
-    },
-    {
-        "texto": "De acordo com as definições conceituais fornecidas no Glossário (item 18), o termo 'Engajamento' compreende:",
-        "opcoes": [
-            "O tempo total de permanência de um perfil conectado aos servidores do TikTok.",
-            "Interações (likes, comentários, compartilhamentos).",
-            "O volume bruto de tráfego em pacotes de rede gerado por requisições HTTP.",
-            "A extração automatizada de perfis com o uso de scripts em terminal."
-        ],
-        "respostaCorreta": "Interações (likes, comentários, compartilhamentos).",
-        "fundamentacao": "Item 18 (Glossário): 'Engajamento. Interações (likes, comentários, compartilhamentos).'",
-        "id": 18
-    },
-    {
-        "texto": "O Glossário define 'Metadados' e 'Scraping', respectivamente, como:",
-        "opcoes": [
-            "Extração automatizada de dados de websites; captura de tela estática.",
-            "Dados sobre dados (informações sobre vídeos, comentários etc.); extração automatizada de dados de websites.",
-            "Marca de tempo Unix; consulta avançada por meio de operadores especiais.",
-            "Identificador alfanumérico da URL; agente fictício para infiltração digital."
-        ],
-        "respostaCorreta": "Dados sobre dados (informações sobre vídeos, comentários etc.); extração automatizada de dados de websites.",
-        "fundamentacao": "Item 18 (Glossário): 'Metadados. Dados sobre dados (informações sobre vídeos, comentários etc.).' e 'Scraping. Extração automatizada de dados de websites.'",
-        "id": 19
-    },
-    {
-        "texto": "No que tange aos conceitos de 'Snapshot' e 'Timestamp' apresentados no Glossário, assinale a opção correta:",
-        "opcoes": [
-            "Snapshot é o identificador único da conta; Timestamp é a lista de menções.",
-            "Snapshot é a marca de tempo em formato Unix; Timestamp é a extração de dados da API.",
-            "Snapshot é a captura de página em um ponto específico no tempo; Timestamp é a marca de tempo em formato Unix.",
-            "Snapshot é o relatório pericial impresso; Timestamp é o registro criptográfico de custódia."
-        ],
-        "respostaCorreta": "Snapshot é a captura de página em um ponto específico no tempo; Timestamp é a marca de tempo em formato Unix.",
-        "fundamentacao": "Item 18 (Glossário): 'Snapshot. Captura de página em um ponto específico no tempo.' e 'Timestamp. Marca de tempo em formato Unix.'",
-        "id": 20
-    },
-    {
-        "texto": "A diferenciação precisa entre 'UniqueID' e 'User ID' é fundamental no levantamento de inteligência em redes sociais. Segundo o Glossário:",
-        "opcoes": [
-            "UniqueID é o identificador único e imutável de uma conta; User ID é o nome de usuário que aparece na URL.",
-            "UniqueID é o nome de usuário único que aparece na URL; User ID é o identificador único e imutável de uma conta.",
-            "Ambos são termos estritamente sinônimos que indicam o selo oficial de verificação concedido pela plataforma.",
-            "UniqueID é a credencial criptografada de acesso; User ID é o endereço de protocolo IP do usuário."
-        ],
-        "respostaCorreta": "UniqueID é o nome de usuário único que aparece na URL; User ID é o identificador único e imutável de uma conta.",
-        "fundamentacao": "Item 18 (Glossário): 'UniqueID. Nome de usuário único que aparece na URL.' e 'User ID. Identificador único e imutável de uma conta.'",
-        "id": 21
-    },
-    {
-        "texto": "No Glossário da obra, o conceito atribuído expressamente à 'Verificação' é:",
-        "opcoes": [
-            "Confirmação por meio de três fontes digitais independentes em ambiente laboratorial.",
-            "Checagem do hash criptográfico para validação da integridade de evidências digitais.",
-            "Status oficial de conta confirmada pela plataforma.",
-            "Autenticação de dois fatores configurada pelo administrador do perfil investigado."
-        ],
-        "respostaCorreta": "Status oficial de conta confirmada pela plataforma.",
-        "fundamentacao": "Item 18 (Glossário): 'Verificação. Status oficial de conta confirmada pela plataforma.'",
-        "id": 22
-    },
-    {
-        "texto": "Na seção 'Recursos', sob a classificação específica de 'Plataformas de espelho', o texto aponta expressamente os seguintes endereços eletrônicos:",
-        "opcoes": [
-            "https://www.google.com/ e https://duckduckgo.com/",
-            "https://www.tikvib.com/ e https://urlebird.com/pt/",
-            "https://www.epochconverter.com/ e https://dfir.blog/unfurl/",
-            "https://www.shodan.io/ e https://www.maltego.com/"
-        ],
-        "respostaCorreta": "https://www.tikvib.com/ e https://urlebird.com/pt/",
-        "fundamentacao": "Seção Recursos (Plataformas de espelho): '• https://www.tikvib.com/ • https://urlebird.com/pt/'.",
-        "id": 23
-    },
-    {
-        "texto": "Dentre as 'Ferramentas mencionadas' listadas na seção de Recursos, qual endereço corresponde especificamente ao repositório do 'Tiktok-scan' no GitHub?",
-        "opcoes": [
-            "https://bellingcat.github.io/tiktok-timestamp/",
-            "https://github.com/faciltech/Tiktok-scan",
-            "https://www.osintcombine.com/",
-            "https://web.archive.org/"
-        ],
-        "respostaCorreta": "https://github.com/faciltech/Tiktok-scan",
-        "fundamentacao": "Seção Recursos (Ferramentas mencionadas): '• https://github.com/faciltech/Tiktok-scan'.",
-        "id": 24
-    },
-    {
-        "texto": "Na bibliografia de referência do texto, a obra intitulada 'Inteligência e investigação criminal em fontes abertas' (3ª edição, 2020) possui como autores:",
-        "opcoes": [
-            "Michael Bazzell.",
-            "Eduardo Amaral.",
-            "Alessandro Gonçalves Barreto e Emerson Wendt.",
-            "Alessandro Gonçalves Barreto e Michael Bazzell."
-        ],
-        "respostaCorreta": "Alessandro Gonçalves Barreto e Emerson Wendt.",
-        "fundamentacao": "Bibliografia: 'BARRETO, Alessandro Gonçalves; WENDT, Emerson. Inteligência e investigação criminal em fontes abertas. 3. ed. Rio de Janeiro: Brasport, 2020.'",
-        "id": 25
-    },
-    {
-        "texto": "De acordo com as referências bibliográficas do material de estudo, a obra de autoria de Eduardo Amaral (2025) intitula-se:",
-        "opcoes": [
-            "OSINT techniques: resources for uncovering online information.",
-            "Inteligência cibernética e investigação em fontes abertas.",
-            "Shell Script para OSINT.",
-            "Manual de automação para inteligência policial."
-        ],
-        "respostaCorreta": "Shell Script para OSINT.",
-        "fundamentacao": "Bibliografia: 'AMARAL, Eduardo. Shell Script para OSINT. Porto Alegre: WB Editora, 2025.'",
-        "id": 26
-    }
+  {
+    "texto": "Ao longo do período da história brasileira, tivemos sete constituições que organizaram nossa vida em sociedade. Algumas outorgadas e outras aprovadas pelo poder legislativo. Dentre elas, qual tinha um caráter autoritário, centralizador e inspirada em regimes fascistas:",
+    "opcoes": [
+      "A Constituição de 1946.",
+      "A Constituição de 1967.",
+      "A Constituição de 1934.",
+      "A Constituição de 1937.",
+      "A Constituição de 1824. 02"
+    ],
+    "respostaCorreta": "A Constituição de 1937.",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 1: D",
+    "id": 1
+  },
+  {
+    "texto": "No princípio dos oitocentos, já havia uma pressão diplomática inglesa pelo fim da diáspora africana em direção ao Brasil. Em 1845, uma lei inglesa de repressão ao tráfico foi aprovada para confisco dos navios negreiros e penalização de seus comandantes. Como era denominada a citada lei:",
+    "opcoes": [
+      "Lei Áurea.",
+      "Lei dos Sexagenários.",
+      "Lei Saraiva-Cotegipe.",
+      "Bill Aberdeen.",
+      "Lei do Ventre Livre. 02 / 44 CHQAO 2025 | Caderno de questões Questões 01 a 10 03"
+    ],
+    "respostaCorreta": "Bill Aberdeen.",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 2: D",
+    "id": 2
+  },
+  {
+    "texto": "D. João VI é, até hoje, uma figura polêmica na História Brasileira. Tendo passado para memória coletiva de forma caricata como um glutão, obeso, maltrapilho, indeciso e até mesmo covarde. Porém, recebeu de Napoleão, em seus escritos durante o exílio na ilha de Santa Helena, o rasgado elogio de ter sido o monarca português “o único a me tapear em todos os tempos”. Para o Brasil, contudo, parece impossível menosprezar a relevância da chamada transmigração da corte portuguesa. Assinale a alternativa que NÃO corresponde a uma das medidas tomadas durante do Período Joanino (1808 – 1821).",
+    "opcoes": [
+      "Decretação da Abertura dos Portos às Nações Amigas, ampliando o processo de desenvolvimento de uma sólida classe de comerciantes.",
+      "Convocação de uma Assembleia Constituinte, que outorga a primeira Magna Carta brasileira, alçando o Brasil a categoria Reino Unido a Portugal e Algarve.",
+      "Fundação do Jardim Botânico para desempenhar as funções de instituto agronômico e dirigir pesquisas sobre espécies vegetais.",
+      "Assinatura, em 1810, dos Tratados de Aliança e Amizade de Comércio e Navegação, que garantiram a taxação privilegiada para os produtos britânicos.",
+      "Criação das Escolas de Matemática, Ciências, Física e Engenharia; Médico-cirúrgica e de Comércio e Administração para qualificar profissionais nas respectivas áreas. 04"
+    ],
+    "respostaCorreta": "Convocação de uma Assembleia Constituinte, que outorga a primeira Magna Carta brasileira, alçando o Brasil a categoria Reino Unido a Portugal e Algarve.",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 3: B",
+    "id": 3
+  },
+  {
+    "texto": "No final do século XIX e início do século XX, a expansão do capitalismo levou a mudanças nas relações sociais no campo. Na República Oligárquica, essas transformações levaram à eclosão de movimentos de resistência da população pobre e interiorana contra o mandonismo e a violência das elites locais. São exemplos de revoltas no campo durante a Primeira República:",
+    "opcoes": [
+      "A Revolta dos 18 do Forte e a Revolução de 1924.",
+      "A Guerra de Canudos e a Guerra do Contestado.",
+      "A Guerra do Contestado e a 2ª Revolta da Armada.",
+      "A Guerra de Canudos e o Tenentismo.",
+      "A Revolta da Vacina Obrigatória e o Cangaço. 03 / 44 CHQAO 2025 | Caderno de questões Questões 01 a 10 05"
+    ],
+    "respostaCorreta": "A Guerra de Canudos e a Guerra do Contestado.",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 4: B",
+    "id": 4
+  },
+  {
+    "texto": "Com a constante pressão inglesa para o fim do comércio negreiro no século XIX, os grandes latifundiários criaram instrumentos para dificultar o acesso à terra; obrigando a ida dos imigrantes ao interior agrário e dificultando sua permanência na cidade. Estes instrumentos foram:",
+    "opcoes": [
+      "Lei Áurea e imigração subvencionada.",
+      "Lei Eusébio de Queirós e colônias de parceria.",
+      "Lei Alves Branco e sesmarias.",
+      "Lei Saraiva-Cotegipe e imigração subvencionada.",
+      "Lei de Terras e colônias de parceria. 06"
+    ],
+    "respostaCorreta": "Lei de Terras e colônias de parceria. 06",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 5: E",
+    "id": 5
+  },
+  {
+    "texto": "No transcurso dos primeiros anos da Segunda Guerra Mundial, a diplomacia varguista se manteve neutra com relação ao apoio ao Eixo ou às nações aliadas. Esta estratégia getulista ficou conhecida como equidistância pragmática e visava atingir vantagens comerciais aos objetivos do poder nacional. Em troca da instalação de bases militares no Nordeste Brasileiro em apoio aos Aliados, o Brasil teve como vantagem a(o):",
+    "opcoes": [
+      "Transferência da tecnologia de fabricação do fuzil M1 Garand.",
+      "Abertura e asfaltamento da rodovia BR 040 (Presidente Washington Luís).",
+      "Construção da Cidade de Brasília (DF).",
+      "Criação da Petróleo Brasileiro S.A. (Petrobras).",
+      "Financiamento para a construção da CSN. 07"
+    ],
+    "respostaCorreta": "Financiamento para a construção da CSN. 07",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 6: E",
+    "id": 6
+  },
+  {
+    "texto": "Ao longo do Período Regencial, o agravamento da situação econômica e as tensões entre os grupos proprietários e destes com setores populares, levaram o Brasil a um clima de instabilidade e confrontações violentas. Das rebeliões ocorridas no período, uma delas se deu na Bahia, proclamou uma República, foi ocasionada pelo descontentamento com o centralismo político e teve como protagonistas membros das camadas urbanas que se manifestavam em jornais, panfleto, além de se reunirem em lojas maçônicas. Essa REBELIÃO ficou conhecida como:",
+    "opcoes": [
+      "Sabinada.",
+      "Balaiada.",
+      "Cabanagem.",
+      "Farroupilha.",
+      "Malês. 04 / 44 CHQAO 2025 | Caderno de questões Questões 01 a 10 08"
+    ],
+    "respostaCorreta": "Sabinada.",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 7: A",
+    "id": 7
+  },
+  {
+    "texto": "Em 2025, completar-se-á 200 anos do reconhecimento da independência brasileira por Portugal por meio da assinatura do Tratado Paz, Aliança e Amizade. Mesmo que para muitos historiadores tal tratado tenha sido um desfecho melancólico dos últimos anos do reinado de D. João VI e a prova cabal do fracasso do projeto de organização de um império luso-brasileiro; para o Brasil o reconhecimento teve um custo alto. Nos termos desse tratado intermediado pelo diplomata inglês Sir Charles Stuart, o Brasil deveria:",
+    "opcoes": [
+      "Reconhecer D. João como “Imperador do Brasil”, atribuindo a ele o Poder Moderador durante o reinado de seu filho.",
+      "Devolver, às expensas da fazenda brasileira, a integridade do acervo da Biblioteca Real, vinda para o Brasil com a família real.",
+      "Pagar a Portugal uma compensação de 2 milhões de libras pela perda da colônia, das quais 250 mil iam diretamente para D. João VI.",
+      "Assumir toda a dívida portuguesa com a Coroa Britânica, incluindo o déficit comercial da balança portuguesa até 1865.",
+      "Manter todas as propriedades adquiridas por D. João durante sua estada no Brasil em seu nome, garantindo o pleno gozo quando lhe conviesse. 09"
+    ],
+    "respostaCorreta": "Pagar a Portugal uma compensação de 2 milhões de libras pela perda da colônia, das quais 250 mil iam diretamente para D. João VI.",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 8: C",
+    "id": 8
+  },
+  {
+    "texto": "Não há como pensar o Segundo Reinado (1840 – 1889) sem levar em conta a riqueza e as transformações advindas da produção cafeeira. Mesmo que não se possa dizer que a economia brasileira se restringia ao plantio do Café, é certo que este era a principal riqueza brasileira no comércio internacional. A produção de café teve uma “marcha”, ou seja, um ritmo e uma direção na sua expansão produtiva ao longo do Segundo Reinado e de parte da República. Esta expansão territorial está representada, CRONOLOGICAMENTE, na alternativa:",
+    "opcoes": [
+      "Vale do Ivaí – Sudoeste do Mato Grosso do Sul – Zona da Mata mineira – Região de Campinas – Centro-Oeste paulista – Norte do Paraná – Vale do Paraíba fluminense e paulista.",
+      "Vale do Paraíba fluminense e paulista – Zona da Mata mineira – Norte do Paraná – Vale do Ivaí – Sudoeste do Mato Grosso do Sul – Região de Campinas – Centro-Oeste paulista.",
+      "Região de Campinas – Centro-Oeste paulista – Norte do Paraná – Vale do Ivaí – Sudoeste do Mato Grosso do Sul – Zona da Mata mineira – Vale do Paraíba fluminense e paulista.",
+      "Zona da Mata mineira – Região de Campinas – Centro-Oeste paulista – Norte do Paraná – Vale do Paraíba fluminense e paulista – Vale do Ivaí – Sudoeste do Mato Grosso do Sul.",
+      "Vale do Paraíba fluminense e paulista – Zona da Mata mineira – Região de Campinas – Centro-Oeste paulista – Norte do Paraná – Vale do Ivaí – Sudoeste do Mato Grosso do Sul. 05 / 44 CHQAO 2025 | Caderno de questões Questões 01 a 10 10"
+    ],
+    "respostaCorreta": "Vale do Paraíba fluminense e paulista – Zona da Mata mineira – Região de Campinas – Centro-Oeste paulista – Norte do Paraná – Vale do Ivaí – Sudoeste do Mato Grosso do Sul. 05 / 44 CHQAO 2025 | Caderno de questões Questões 01 a 10 10",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 9: E",
+    "id": 9
+  },
+  {
+    "texto": "Durante a Regência Trina Permanente (1831 – 1835) passou a vigorar o Código de Processo Criminal, o qual complementou o Código Criminal de 1830. Qual das alternativas abaixo o Código de Processo Criminal NÃO passou a regular:",
+    "opcoes": [
+      "O recrutamento da Guarda Nacional.",
+      "O processo eleitoral.",
+      "As normas para o funcionamento da justiça.",
+      "O funcionamento das Assembleias Legislativas Provinciais.",
+      "Os poderes dos juízes de paz. 06 / 44 CHQAO 2025 | Caderno de questões Questões 11 a 20 11"
+    ],
+    "respostaCorreta": "O funcionamento das Assembleias Legislativas Provinciais.",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 10: D",
+    "id": 10
+  },
+  {
+    "texto": "Em relação aos aspectos da população brasileira, mais precisamente no tocante ao crescimento vegetativo e estrutura da população, marque a alternativa INCORRETA:",
+    "opcoes": [
+      "Nas últimas décadas, o Brasil vem passando por significativas mudanças estruturais em sua composição demográfica, com uma tendência ao envelhecimento populacional.",
+      "A população brasileira tem envelhecido devido ao aumento da taxa de fecundidade e da diminuição da expectativa de vida.",
+      "Está ocorrendo um significativo estreitamento na base da pirâmide etária brasileira, que corresponde aos mais jovens, e o alargamento do meio para o topo, por causa do aumento da participação percentual de adultos e idosos.",
+      "O aumento da população idosa em relação à população economicamente ativa (PEA) leva à necessidade do governo monitorar as regras da previdência social, uma vez que haverá menos trabalhadores contribuindo e um número maior de pessoas utilizando o sistema previdenciário (aposentados e pensionistas).",
+      "O crescimento da população com idade acima de 60 anos exige, cada vez mais, maiores investimentos no sistema de saúde, pois em geral os idosos requerem mais cuidados médicos. 12"
+    ],
+    "respostaCorreta": "A população brasileira tem envelhecido devido ao aumento da taxa de fecundidade e da diminuição da expectativa de vida.",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 11: B",
+    "id": 11
+  },
+  {
+    "texto": "Sobre os combustíveis fósseis no Brasil, marque a alternativa INCORRETA:",
+    "opcoes": [
+      "A Agência Nacional do Petróleo (ANP) é uma autarquia vinculada ao Ministério de Minas e Energia com a atribuição de regular, contratar e fiscalizar as atividades ligadas ao petróleo e ao gás natural no Brasil.",
+      "A região Sul do Brasil responde por 100% da produção nacional de carvão mineral por apresentar jazidas com viabilidade econômica, sendo Rio Grande do Sul e Santa Catarina os maiores produtores desse recurso energético.",
+      "Dentre os combustíveis fósseis, o gás natural é a fonte de energia que vem apresentando grande taxa de crescimento na participação da matriz energética brasileira.",
+      "O carvão mineral é a principal fonte de geração de energia elétrica no Brasil, superando fontes renováveis como hidrelétrica e eólica.",
+      "A camada pré-sal é uma formação geológica de aproximadamente 150 milhões de anos, que se constituiu com a separação dos continentes africano e sul-americano ao longo das bacias de Santos, Campos e Espírito Santo, abaixo de uma camada de sal. As maiores reservas petrolíferas conhecidas em área pré-sal no mundo ocorrem no litoral brasileiro, onde passaram a ser conhecidas como “petróleo do pré-sal”. 07 / 44 CHQAO 2025 | Caderno de questões Questões 11 a 20 13"
+    ],
+    "respostaCorreta": "O carvão mineral é a principal fonte de geração de energia elétrica no Brasil, superando fontes renováveis como hidrelétrica e eólica.",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 12: D",
+    "id": 12
+  },
+  {
+    "texto": "Analise as alternativas abaixo e marque a alternativa CORRETA sobre a diferença conceitual entre as Unidades de Proteção Integral e as Unidades de Uso Sustentável no contexto das unidades de conservação brasileiras:",
+    "opcoes": [
+      "As Unidades de Proteção Integral permitem atividades recreacionais e educacionais, enquanto as Unidades de Uso Sustentável são destinadas exclusivamente à preservação ambiental total.",
+      "As Unidades de Proteção Integral têm restrição total ao uso, visando a preservação ambiental, enquanto as Unidades de Uso Sustentável permitem atividades culturais, educacionais e recreacionais com menor restrição.",
+      "As Unidades de Proteção Integral são criadas apenas por leis municipais, enquanto as Unidades de Uso Sustentável são estabelecidas exclusivamente em biomas marinhos.",
+      "As Unidades de Proteção Integral existem apenas em biomas terrestres, enquanto as Unidades de Uso Sustentável abrangem biomas marinhos.",
+      "As Unidades de Proteção Integral são resultados de conferências internacionais, enquanto as Unidades de Uso Sustentável decorrem exclusivamente de pressões da sociedade civil. 14"
+    ],
+    "respostaCorreta": "As Unidades de Proteção Integral têm restrição total ao uso, visando a preservação ambiental, enquanto as Unidades de Uso Sustentável permitem atividades culturais, educacionais e recreacionais com menor restrição.",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 13: B",
+    "id": 13
+  },
+  {
+    "texto": "Sobre a estrutura e distribuição espacial do comércio e dos serviços no Brasil. Qual das alternativas abaixo está CORRETA:",
+    "opcoes": [
+      "As atividades terciárias, como comércio e serviços, concentram a menor participação no PIB e no número de empregos no Brasil desde o final do século XIX.",
+      "As empresas que exercem as atividades de comércio e serviços possuem baixa diversidade e complexidade em termos de tamanho, qualidade, produtividade, número de empregados, faturamento, entre outros.",
+      "A distribuição espacial das atividades terciárias segue o padrão da distribuição da população pelo território, com concentração espacial no Norte-Nordeste do país, regiões de economia mais dinâmica.",
+      "É interessante destacar que algumas empresas de prestação de serviços que não demandam presença física próxima ao cliente, como telecomunicação e teleatendimento, apesar de terem grande participação percentual no conjunto total das atividades terciárias, estão restritas a se instalar apenas em municípios próximos das regiões onde se originaram.",
+      "Na maior parte das empresas do setor terciário, como alguns comércios e prestação de serviços, predomina o uso intensivo de mão de obra familiar e contratada em funções onde é difícil substituir trabalhadores por máquinas. Todavia, alguns setores de comércio e serviços podem ser automatizados, substituindo trabalhadores por computadores, câmeras de monitoramento etc., o que reduz a quantidade de empregos. 08 / 44 CHQAO 2025 | Caderno de questões Questões 11 a 20 15"
+    ],
+    "respostaCorreta": "Na maior parte das empresas do setor terciário, como alguns comércios e prestação de serviços, predomina o uso intensivo de mão de obra familiar e contratada em funções onde é difícil substituir trabalhadores por máquinas. Todavia, alguns setores de comércio e serviços podem ser automatizados, substituindo trabalhadores por computadores, câmeras de monitoramento etc., o que reduz a quantidade de empregos. 08 / 44 CHQAO 2025 | Caderno de questões Questões 11 a 20 15",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 14: E",
+    "id": 14
+  },
+  {
+    "texto": "No contexto do comércio internacional de produtos agrícolas. Marque a alternativa CORRETA que explica as restrições enfrentadas por países em desenvolvimento, como o Brasil, devido às políticas adotadas por países desenvolvidos para proteger seus mercados agrícolas:",
+    "opcoes": [
+      "Protecionismo agrícola: prática de impor barreiras tarifárias e não tarifárias, como cotas e cláusulas ambientais, para limitar importações de produtos agrícolas.",
+      "Globalização econômica: processo que promove a livre circulação de produtos agrícolas, eliminando barreiras comerciais.",
+      "Inovação tecnológica: adoção de novas tecnologias na agricultura para aumentar a produtividade e reduzir custos de produção.",
+      "Diversificação econômica: estratégia de ampliar a variedade de produtos exportados para reduzir a dependência de commodities agrícolas.",
+      "Competitividade logística: melhoria na infraestrutura de transporte e armazenagem que aumenta a capacidade de exportação. 09 / 44 CHQAO 2025 | Caderno de questões Questões 11 a 20 16"
+    ],
+    "respostaCorreta": "Protecionismo agrícola: prática de impor barreiras tarifárias e não tarifárias, como cotas e cláusulas ambientais, para limitar importações de produtos agrícolas.",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 15: A",
+    "id": 15
+  },
+  {
+    "texto": "Analise as afirmações abaixo sobre as características das bacias hidrográficas brasileiras e suas utilizações: I. Os rios brasileiros, em sua maioria, possuem regime pluvial simples, com exceção do rio Amazonas, que apresenta um regime complexo devido à captação de cheias em ambos os hemisférios. II. As bacias do rio da Prata, que incluem os rios Paraná, Paraguai e Uruguai, destacam-se pelo elevado potencial hidrelétrico, especialmente no rio Paraná, e pela navegabilidade em trechos específicos. III. A bacia do rio Parnaíba, localizada em região de clima semiárido, caracteriza-se por uma alta vazão média ao longo do ano, com a maioria de seus afluentes sendo perenes. IV. Os rios de planalto predominam no Brasil, favorecendo a geração de energia hidrelétrica devido às áreas de elevado índice pluviométrico e à presença de corredeiras e cascatas. V. A bacia do rio Tocantins-Araguaia é utilizada para o escoamento de grãos, como a soja, mas não apresenta potencial hidrelétrico significativo devido à ausência de usinas de grande porte. Com base nas afirmações acima, qual alternativa indica corretamente as afirmações VERDADEIRAS:",
+    "opcoes": [
+      "I, II e III.",
+      "II, IV e V.",
+      "II, III e IV.",
+      "I, II e IV.",
+      "I, IV e V. 10 / 44 CHQAO 2025 | Caderno de questões Questões 11 a 20 17"
+    ],
+    "respostaCorreta": "I, II e IV.",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 16: D",
+    "id": 16
+  },
+  {
+    "texto": "Dê as coordenadas geográficas do ponto C:",
+    "opcoes": [
+      "Lat 60º S Long 0º.",
+      "Lat 0º Long 60º O.",
+      "Lat 60º O Long 0º S.",
+      "Lat 0º Long 60º E.",
+      "Lat 20º S Long 60º E. 11 / 44 CHQAO 2025 | Caderno de questões Questões 11 a 20 18"
+    ],
+    "respostaCorreta": "Lat 0º Long 60º O.",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 17: B",
+    "id": 17
+  },
+  {
+    "texto": "Um climograma é um tipo de gráfico que é composto por colunas, que representam a quantidade de chuvas mensais, e uma curva, que representa a variação das temperaturas médias mensais, ao longo do ano. Uma tropa vai se deslocar para uma região que se caracteriza pelo climograma abaixo: Com base na interpretação do climograma, é CORRETO afirmar que a tropa pode estar indo para:",
+    "opcoes": [
+      "A Região Amazônica.",
+      "O Litoral do Rio Grande do Sul.",
+      "O Sertão do Nordeste.",
+      "A Serra Gaúcha.",
+      "A Região de Três Corações-MG. 19"
+    ],
+    "respostaCorreta": "A Região Amazônica.",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 18: A",
+    "id": 18
+  },
+  {
+    "texto": "A respeito do uso de energia nuclear para gerar energia no Brasil, é CORRETO afirmar que:",
+    "opcoes": [
+      "São Paulo é o maior produtor nacional de energia nuclear, consumindo internamente toda a produção nacional.",
+      "Atualmente há apenas duas usinas nucleares em funcionamento no país, ambas localizadas no estado do Rio de Janeiro.",
+      "A energia nuclear responde por mais de 20% da geração de energia elétrica consumida no Sudeste.",
+      "Devido ao baixo potencial hidrelétrico dos rios brasileiros, a energia nuclear vem se destacando no contexto energético brasileiro, devendo passar a geração das hidrelétricas e das demais termelétricas.",
+      "Angra 3, a maior usina nuclear em atividade no Brasil, supre toda a demanda elétrica para a região Centro-Sul. 12 / 44 CHQAO 2025 | Caderno de questões Questões 11 a 20 20"
+    ],
+    "respostaCorreta": "Atualmente há apenas duas usinas nucleares em funcionamento no país, ambas localizadas no estado do Rio de Janeiro.",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 19: B",
+    "id": 19
+  },
+  {
+    "texto": "A cartografia utiliza o artifício das projeções cartográficas para representar a superfície terrestre em duas dimensões. Projeção de Robinson Com base na análise da projeção cartográfica acima, assinale a alternativa CORRETA.",
+    "opcoes": [
+      "É uma projeção do tipo conforme, pois preserva o formato real dos continentes.",
+      "Pode ser classificada como do tipo equivalente, pois preserva a distância real entre dois pontos na superfície do mapa.",
+      "É classificada como do tipo afilática, apresentando menor distorção da superfície do planeta, quando comparada com outros tipos de projeções.",
+      "Assim como a projeção de Peters, a projeção de Robinson é do tipo equidistante.",
+      "Por ser do tipo plana, a projeção de Robinson é uma das mais utilizadas na atualidade, principalmente em livros escolares. 13 / 44 CHQAO 2025 | Caderno de questões Questões 21 a 30 Leia o Texto I abaixo e responda a questão 21 Texto I Leia o excerto abaixo, retirado da obra Os Lusíadas, de Luís Vaz de Camões, e responda o que se pede: “a disciplina militar prestante / não se aprende Senhor, na fantasia, / sonhando, imaginando ou estudando / senão vendo, tratando e pelejando.” 21"
+    ],
+    "respostaCorreta": "É classificada como do tipo afilática, apresentando menor distorção da superfície do planeta, quando comparada com outros tipos de projeções.",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 20: C",
+    "id": 20
+  },
+  {
+    "texto": "Observando o uso do termo “senão” no trecho acima, em qual das frases abaixo a palavra senão é utilizada CORRETAMENTE:",
+    "opcoes": [
+      "Estude bastante senão você passará de ano com louvor.",
+      "Ele queria tudo só para ele, senão ficaria muito irritado.",
+      "Precisamos nos apressar, senão chegaremos atrasados ao evento.",
+      "Com esse tempo, senão chover, faremos um piquenique no parque.",
+      "Não havia outra saída senão recorrer à justiça para resolver o problema. 22"
+    ],
+    "respostaCorreta": "Não havia outra saída senão recorrer à justiça para resolver o problema. 22",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 21: E",
+    "id": 21
+  },
+  {
+    "texto": "A frase abaixo possui um erro proposital de pontuação. Perante esse ato de heroísmo, a memória dos militares, continua viva até hoje. Assinale a alternativa que apresenta a REGRA que foi FERIDA.",
+    "opcoes": [
+      "Não separar substantivo de verbo.",
+      "Não separar sujeito do objeto direto.",
+      "Não separar o sujeito do seu predicado.",
+      "Não separar o verbo do seu complemento.",
+      "Não separar objeto direto do objeto indireto. 14 / 44 CHQAO 2025 | Caderno de questões Questões 21 a 30 Leia o Texto II abaixo e responda a questão 23. Texto II 23"
+    ],
+    "respostaCorreta": "Não separar o sujeito do seu predicado.",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 22: C",
+    "id": 22
+  },
+  {
+    "texto": "O gênero textual tirinha busca, frequentemente, fazer uso do humor a partir da relação entre linguagem verbal e não verbal. Analise a construção do humor na tirinha contida no Texto II acima e assinale a alternativa CORRETA:",
+    "opcoes": [
+      "O humor se dá pela crítica aos soldados presente na linguagem verbal e reforçada pela linguagem não verbal.",
+      "O humor é construído a partir da quebra de expectativa através da fala do soldado SMITH no último quadro, sugerindo que ele estaria muito bem camuflado.",
+      "Percebe-se que o humor é pautado na relação de desrespeito do subordinado com o seu superior.",
+      "O humor é encontrado pela nítida irritação do superior, indicada pela linguagem não-verbal em todos os quadros.",
+      "O final revela um encorajamento às faltas disciplinares, provocando humor. 15 / 44 CHQAO 2025 | Caderno de questões Questões 21 a 30 Leia o Texto III abaixo e responda a questão 24. Texto III Responsabilidade Socioambiental Está ligada a ações que respeitam o meio ambiente e a políticas que tenham como um dos principais objetivos a sustentabilidade. Todos são responsáveis pela preservação ambiental: governos, empresas e cada cidadão. O Ministério do Meio Ambiente (MMA) desenvolve políticas públicas que visam promover a produção e o consumo sustentáveis. Produção sustentável é a incorporação, ao longo de todo ciclo de vida de bens e serviços, das melhores alternativas possíveis para minimizar custos ambientais e sociais. Já o consumo sustentável pode ser definido, segundo o Programa das Nações Unidas para o Meio Ambiente (PNUMA), como o uso de bens e serviços que atendam às necessidades básicas, proporcionando uma melhor qualidade de vida, enquanto minimizam o uso de recursos naturais e materiais tóxicos, a geração de resíduos e a emissão de poluentes durante todo ciclo de vida do produto ou do serviço, de modo que não se coloque em risco as necessidades das futuras gerações.[...] Fonte: https://antigo.mma.gov.br/responsabilidade-socioambiental.html Acesso em 20 de Março de 2025. 24"
+    ],
+    "respostaCorreta": "O humor é construído a partir da quebra de expectativa através da fala do soldado SMITH no último quadro, sugerindo que ele estaria muito bem camuflado.",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 23: B",
+    "id": 23
+  },
+  {
+    "texto": "Em qual das alternativas abaixo, o verbo sublinhado está conjugado no mesmo tempo e modo verbal que os verbos destacados no Texto III?",
+    "opcoes": [
+      "“O Ministério do Meio Ambiente promoveu ações de conservação e lançou campanhas de conscientização sobre a preservação dos recursos naturais.”",
+      "“O Ministério do Meio Ambiente promoverá novas iniciativas para a conservação da biodiversidade e a redução da poluição.”",
+      "“Antes da nova legislação, o Ministério do Meio Ambiente já havia implementado várias políticas de preservação ambiental.”",
+      "“O Ministério do Meio Ambiente afirmou que, se tivesse recursos, implementaria novas áreas de proteção ambiental.”",
+      "“O Ministério do Meio Ambiente atua na preservação dos recursos naturais e promove ações de conscientização sobre a sustentabilidade.” 16 / 44 CHQAO 2025 | Caderno de questões Questões 21 a 30 Leia o Texto IV abaixo e responda a questão 25. Texto IV — consulta ao arquivo original Trecho musical não transcrito nesta edição. Para resolver a questão 25, consulte a página 10 do PDF original (página impressa 12). Créditos no original: Erasmo Esteves (Erasmo Carlos) e Roberto Carlos Braga. 25"
+    ],
+    "respostaCorreta": "“O Ministério do Meio Ambiente atua na preservação dos recursos naturais e promove ações de conscientização sobre a sustentabilidade.” 16 / 44 CHQAO 2025 | Caderno de questões Questões 21 a 30 Leia o Texto IV abaixo e responda a questão 25. Texto IV — consulta ao arquivo original Trecho musical não transcrito nesta edição. Para resolver a questão 25, consulte a página 10 do PDF original (página impressa 12). Créditos no original: Erasmo Esteves (Erasmo Carlos) e Roberto Carlos Braga. 25",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 24: E",
+    "id": 24
+  },
+  {
+    "texto": "No trecho da música acima, identifique a FIGURA DE LINGUAGEM e classifique-a:",
+    "opcoes": [
+      "Prosopopeia.",
+      "Elipse.",
+      "Anacoluto.",
+      "Hipérbole.",
+      "Silepse de número. 26"
+    ],
+    "respostaCorreta": "Prosopopeia.",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 25: A",
+    "id": 25
+  },
+  {
+    "texto": "Com base no trecho abaixo da Canção do Expedicionário, é possível perceber que o eu lírico apresenta sua origem de forma a destacar a diversidade cultural e geográfica do Brasil. Trecho musical não transcrito nesta edição. Para resolver a questão 26, consulte a página 10 do PDF original (página impressa 12). Assinale a alternativa em que a relação de ideias mantém uma analogia semelhante a do trecho apresentado:",
+    "opcoes": [
+      "Quem vem do mar sabe nadar, quem vem do sertão sabe rezar, quem vem da cidade sabe mandar.",
+      "Venho do campo, da enxada, da labuta e da alvorada, da esperança na colheita e da fé que nunca se acaba.",
+      "O Brasil é grande, o povo é forte, a luta é dura, mas a vitória é certa.",
+      "Da guerra nasce o herói, da paz nasce o amor, da fome nasce o clamor.",
+      "Venho do frio da serra, do calor do agreste, da música do norte e do silêncio do sul. 17 / 44 CHQAO 2025 | Caderno de questões Questões 21 a 30 27"
+    ],
+    "respostaCorreta": "Venho do frio da serra, do calor do agreste, da música do norte e do silêncio do sul. 17 / 44 CHQAO 2025 | Caderno de questões Questões 21 a 30 27",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 26: E",
+    "id": 26
+  },
+  {
+    "texto": "Quanto à acentuação das palavras, assinale a alternativa CORRETA. Os jornais que eles ___, ___ artigos curtos e manchetes que todos ___ .",
+    "opcoes": [
+      "leem - tem - vêem.",
+      "lêm - têem - vêm.",
+      "leem - têm - veem.",
+      "lêem - têm - vêm.",
+      "lêm - tem - vêem. 28"
+    ],
+    "respostaCorreta": "leem - têm - veem.",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 27: C",
+    "id": 27
+  },
+  {
+    "texto": "Assinale a alternativa que preenche CORRETAMENTE as lacunas das seguintes orações: I. Precisa falar ___ cerca de três mil pessoas. II. Daqui ___ alguns anos tudo estará bem diferente. III. ___ dias está desanimado. IV. Vindos de outros estados, todos chegaram ___ tempo ___ reunião.",
+    "opcoes": [
+      "a - a - há - a - à.",
+      "a - a - a - há - a.",
+      "a - à - há - a - há.",
+      "há - a - à - a - a.",
+      "a - há - a - à - a. 29"
+    ],
+    "respostaCorreta": "a - a - há - a - à.",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 28: A",
+    "id": 28
+  },
+  {
+    "texto": "A frase em destaque segue as normas gramaticais. Ronaldo disse que, se não chover, iremos ao parque. Nas alternativas abaixo, identifique aquela que apresenta uma reescrita CORRETA.",
+    "opcoes": [
+      "Ronaldo disse: que se não chover iremos ao parque.",
+      "Ronaldo, disse que se não chover iremos ao parque.",
+      "Ronaldo disse que, se não chover iremos ao parque.",
+      "Ronaldo disse que se não chover, iremos ao parque.",
+      "Ronaldo disse que se não chover iremos, ao parque. 18 / 44 CHQAO 2025 | Caderno de questões Questões 21 a 30 30"
+    ],
+    "respostaCorreta": "Ronaldo disse que se não chover, iremos ao parque.",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 29: D",
+    "id": 29
+  },
+  {
+    "texto": "Assinale a alternativa que corresponde respectivamente à classificação das figuras de linguagem nas orações abaixo: ( ) Sou um passarinho com desejo de voar. ( ) Aquele tum-tum do seu coração aumentava cada vez que se aproximava da pretendente. ( ) “Chove chuva, chove sem parar.” (Jorge Ben Jor) ( ) A mim me enganou só uma vez. ( ) O Velho Chico ocupa cerca de 8% do território brasileiro. I - Antonomásia II - Pleonasmo III - Metáfora IV - Onomatopeia V - Aliteração",
+    "opcoes": [
+      "III - IV - V - II - I.",
+      "IV - I - III - II - IV.",
+      "III - IV - II - V - I.",
+      "V - IV - II - III - I.",
+      "I - II - III - IV - V. 19 / 44 CHQAO 2025 | Caderno de questões Questões 31 a 40 31"
+    ],
+    "respostaCorreta": "III - IV - V - II - I.",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 30: A",
+    "id": 30
+  },
+  {
+    "texto": "Ao assumir funções de Agentes de Administração ou Auxiliar é natural consultar as legislações pertinentes a essas novas funções. Com base nos preceitos previstos no Regulamento de Administração do Exército (Auxiliares. Assinale a ÚNICA opção CORRETA:",
+    "opcoes": [
+      "O encarregado da SALC é o responsável pela certificação dos registros dos atos e fatos de execução orçamentária, financeira e patrimonial realizados pela OM e da existência de documentos hábeis que suportem as operações registradas.",
+      "O gestor de contrato é o agente da administração responsável pelo acompanhamento da execução dos contratos nos aspectos previstos em norma específica.",
+      "Os auxiliares dos agentes da administração são militares ou servidores civis, designados pelo Fiscal Administrativo da OM, para auxiliá-los em suas respectivas funções.",
+      "O encarregado do setor de contabilidade é o responsável pela orientação, análise e proposta de solução para corrigir eventuais inconsistências nos registros contábeis dos atos e fatos da gestão orçamentária, financeira e patrimonial, de acordo com legislação específica.",
+      "O fiscal de contrato é o agente da administração designado para coordenar e comandar o processo de gestão e fiscalização da execução contratual. 32"
+    ],
+    "respostaCorreta": "O encarregado do setor de contabilidade é o responsável pela orientação, análise e proposta de solução para corrigir eventuais inconsistências nos registros contábeis dos atos e fatos da gestão orçamentária, financeira e patrimonial, de acordo com legislação específica.",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 31: D",
+    "id": 31
+  },
+  {
+    "texto": "Os prejuízos ou danos causados à União deverão ser indenizados, excetuando-se os casos fortuitos ou de força maior. Assinale a ÚNICA opção CORRETA que pode ser considerada como caso fortuito ou de força maior, prevista no Regulamento de Administração do Exército (a) Omissões nos seus deveres funcionais.",
+    "opcoes": [
+      "Emprego irregular de recursos públicos.",
+      "Epidemias e moléstias contagiosas.",
+      "Desempenho incorreto das obrigações decorrentes do seu cargo ou encargo.",
+      "Irregularidades nos registros contábeis sob sua responsabilidade, sem a observação das medidas corretivas aplicáveis. 20 / 44 CHQAO 2025 | Caderno de questões Questões 31 a 40 33"
+    ],
+    "respostaCorreta": "Alternativa C",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 32: C",
+    "id": 32
+  },
+  {
+    "texto": "Responsabilidade funcional refere-se à obrigação de cumprir seus deveres e atribuições com zelo e dedicação, observando as normas legais e regulamentares. Conforme previsto no Regulamento de Administração do Exército (administrativa, será responsabilizado essencialmente, a EXCEÇÃO de (",
+    "opcoes": [
+      "Insolvência de estabelecimento bancário, onde foram, na conformidade de legislação específica, abertas contas correntes para créditos de recursos ou autorizados depósitos de valores.",
+      "Erros que resultem em pagamentos indevidos.",
+      "Não efetivação de descontos obrigatórios ou autorizados.",
+      "Irregular enquadramento das despesas, em relação às finalidades básicas exigidas pelas disposições pertinentes.",
+      "Ineficiência de sua administração em qualquer cargo ou encargo. 34"
+    ],
+    "respostaCorreta": "Insolvência de estabelecimento bancário, onde foram, na conformidade de legislação específica, abertas contas correntes para créditos de recursos ou autorizados depósitos de valores.",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 33: A",
+    "id": 33
+  },
+  {
+    "texto": "Analise as assertivas abaixo e marque “V” para as verdadeiras e “F” para as falsas, acerca do tema passagem de função previsto no Regulamento de Administração do Exército (( ) Consideram-se alguns exemplos de casos de afastamento súbito de agente detentor de bens de patrimônio: acidente ou doença; suspensão das funções; extravio; sequestro; falecimento. ( ) Os prazos para a passagem de material, transmissão de encargos e de valores são de até 10 (dez) dias úteis para os Ordenadores de Despesa, Fiscais Administrativos, Comandantes de Subunidade, Encarregados de Setor Financeiro e de Setor de Material. ( ) O substituto será considerado investido da função assim que terminar o prazo determinado em Boletim Interno da OM, para passagem de material, transmissão de encargos e de material. ( ) Nas substituições decorrentes de cargo vago ou de afastamento do detentor efetivo ou interino, por prazo superior a 30 (trint",
+    "opcoes": [
+      "V - V - F - F.",
+      "V - F - V - F.",
+      "V - F - F - V.",
+      "F - F - V - V.",
+      "F - V - F - V. 21 / 44 CHQAO 2025 | Caderno de questões Questões 31 a 40 35"
+    ],
+    "respostaCorreta": "V - F - F - V.",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 34: C",
+    "id": 34
+  },
+  {
+    "texto": "Todos os bens patrimoniais sob gestão de qualquer Organização Militar do Comando do Exército pertencem à União. Assinale a ÚNICA assertiva INCORRETA acerca das classificações dos bens patrimoniais da União previstas no Regulamento de Administração do Exército (a) Bens tangíveis – também chamados corpóreos ou materiais, são aqueles que existem fisicamente, ou seja, passíveis de serem tocados.",
+    "opcoes": [
+      "Material permanente – os que têm durabilidade prevista superior a um ano e que, em razão de seu uso, não perde sua identidade física, nem se incorpora a outro bem.",
+      "Bens imóveis – os vinculados ao terreno (solo), que não podem ser retirados sem destruição ou danos.",
+      "Material de consumo – o item, peça, artigo, ou gênero alimentício, que se destina à aplicação, transformação, utilização ou emprego imediato e, quando utilizado, perde suas características individuais e isoladas.",
+      "Bens intangíveis – também chamados incorpóreos ou imateriais, são aqueles que não existem fisicamente, somente de forma abstrata, ou seja, não podem ser tocados. 22 / 44 CHQAO 2025 | Caderno de questões Questões 31 a 40 36"
+    ],
+    "respostaCorreta": "Alternativa B",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 35: B",
+    "id": 35
+  },
+  {
+    "texto": "Os textos abaixo trazem exemplos de modernização recente na estrutura administrativa de algumas Organizações Militares do Exército Brasileiro: Texto I: O Colégio Militar de São Paulo e o CPOR/SP são desvinculados e têm seus próprios Comandantes. Após cinco anos vinculados, o Centro de Preparação de Oficiais da Reserva de São Paulo (CPOR/SP) e o Colégio Militar de São Paulo (CMSP) passaram a funcionar de maneira independente a partir deste ano. (Fonte: Noticiário do Exército, de 08 de março de 2025); Texto II: Através da Portaria – C Ex nº 2.312, de 28 de agosto de 2024, fica transformado o 4º Batalhão de Comunicações em 4º Batalhão de Comunicações e Guerra Eletrônica. (Fonte: Boletim do Exército nº 36, de 06 de setembro de 2024). Julgue os itens a seguir acerca da estrutura administrativa das Organizações Militares, previstas no Regulamento de Administração do Exército: I – O ato de organização de uma OM criada e demais atos complementares necessários à execução da decisão presidencial ou do Comando do Exército serão baixados pelo Comandante do Exército, mediante proposta da Região Militar de vinculação. II – O ato de desvinculação administrativa de uma OM será transcrito em seu boletim interno e divulgado, por meio de documento oficial, a todos os órgãos diretamente ligados às suas atividades. III – Os atos de criação, localização de sede, subordinação, transformação e extinção de OM, de qualquer valor, são da competência do Comandante do Exército. IV – As atividades administrativas do Comando do Exército somente obedecerão aos princípios particulares necessários ao atendimento de suas peculiaridades. V – A criação, organização, alteração de sede e transformação de OM subordinam-se à legislação em vigor, ao planejamento estratégico do Exército e à sistemática que assegure destino, em tempo oportuno, aos seus recursos humanos e materiais. Analise os itens acima e assinale abaixo somente os CORRETOS:",
+    "opcoes": [
+      "I e II.",
+      "III e V.",
+      "III e IV.",
+      "II e V.",
+      "I, II e IV. 23 / 44 CHQAO 2025 | Caderno de questões Questões 31 a 40 37"
+    ],
+    "respostaCorreta": "II e V.",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 36: D",
+    "id": 36
+  },
+  {
+    "texto": "Sobre a estrutura administrativa das organizações militares e, de acordo com o Regulamento de Administração do Exército (Assinale a opção INCORRETA:",
+    "opcoes": [
+      "Organização Militar (OM) valor unidade é aquela cujo comando, chefia ou direção é privativo de oficial superior, exceto as subunidades independentes.",
+      "A Organização Militar (OM) é denominada Unidade de Administração dos Serviços Gerais (UASG) quando cadastrada no Sistema Integrado de Unidades Gestoras (SIUG).",
+      "Organização Militar (OM) sem autonomia administrativa é a que, não sendo Unidade Gestor (UG), não executa qualquer ato de gestão, devendo estar vinculada a uma OM com autonomia administrativa plena, para o exercício de sua vida vegetativa.",
+      "A Organização Militar (OM) é toda estrutura do Comando do Exército que possua denominação oficial, quadro de organização (QO) e quadro de cargos previstos (QCP) próprios.",
+      "A Organização Militar (OM) com autonomia administrativa é denominada Unidade Gestora (UG) no Sistema Integrado de Administração Financeira (SIAFI). 38"
+    ],
+    "respostaCorreta": "A Organização Militar (OM) é denominada Unidade de Administração dos Serviços Gerais (UASG) quando cadastrada no Sistema Integrado de Unidades Gestoras (SIUG).",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 37: B",
+    "id": 37
+  },
+  {
+    "texto": "O Regulamento de Administração do Exército (os preceitos gerais para as atividades administrativas do Comando do Exército. Sobre as conceituações do a) Cargo – conjunto de atribuições, deveres e responsabilidades afetos ao militar ou servidor civil, especificado na estrutura organizacional de uma OM.",
+    "opcoes": [
+      "Agente da administração – todo militar ou servidor civil que planeja, executa, participa ou controla atividades de gestão orçamentária, financeira, contábil, patrimonial ou de recursos humanos.",
+      "Administração indireta – a exercida pelos serviços integrados na estrutura administrativa da Presidência da República e dos ministérios.",
+      "Comissão – atribuição temporária de serviço a um ou mais agentes, não existente na estrutura organizacional de uma OM.",
+      "Encargos – obrigações cometidas a um agente que, pela sua generalidade, peculiaridade, duração, vulto, ou natureza, não são catalogadas nas estruturas organizacionais das OM ou em outros diplomas legais. 24 / 44 CHQAO 2025 | Caderno de questões Questões 31 a 40 39"
+    ],
+    "respostaCorreta": "Alternativa C",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 38: C",
+    "id": 38
+  },
+  {
+    "texto": "De acordo com o face dos termos das comissões, pareceres do fiscal administrativo, relatórios de sindicâncias, termos circunstanciados administrativos, inquéritos ou tomadas de contas. Sobre a descarga de material permanente, analise os itens a seguir e classifique-os como “V” para as sentenças verdadeiras ou “F” para as sentenças falsas. I - O encarregado de material encaminhará a solicitação de descarga diretamente ao OD, com o seu parecer. II - Perda ou extravio fazem parte dos motivos gerais para a descarga de material. III - A descarga de bens fornecidos pelos OP será registrada no SIAFI e no sistema corporativo de controle patrimonial em uso no Comando do Exército, de acordo com a legislação específica. IV - A homologação de descarga de material não controlado será procedida pelo órgão gestor responsável, mediante solicitação da RM, Grupamento de Engenharia (Gpt E) ou Grupamento Logístico (Gpt Log) de vinculação da OM detentora, de acordo com a legislação específica. Assinale a opção CORRETA:",
+    "opcoes": [
+      "F - F - V - V.",
+      "V - V - F - V.",
+      "F - V - V - F.",
+      "V - V - F - F.",
+      "V - F - F - V. 25 / 44 CHQAO 2025 | Caderno de questões Questões 31 a 40 40"
+    ],
+    "respostaCorreta": "F - V - V - F.",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 39: C",
+    "id": 39
+  },
+  {
+    "texto": "A respeito da responsabilidade dos agentes da administração, o servidor civil, investido em função, cargo ou encargo, que vier a causar prejuízos ou danos à União, as pessoas físicas e/ou jurídicas ou ao serviço, terá sua responsabilidade administrativa, civil e/ou criminal, vinculadas às omissões ou atos ilegais em que incorrer ou praticar. No que se refere ao assunto abordado, analise os itens a seguir: I - A responsabilidade civil isenta o responsável de sanção administrativa e/ou criminal relativa ao evento. II - A responsabilidade não será civil quando ocorrer prejuízo ou dano passível de reparação. III - A isenção de culpa, quando for o caso, só caberá ao responsável que tenha adotado providências de sua alçada, adequadas e oportunas, para evitar o prejuízo ou dano. IV - Os débitos resultantes de responsabilidade civil se anulam pela absolvição administrativa ou criminal, exceto quando, após trânsito em julgado, a decisão penal entender pela existência de fato ou de autoria de conduta danosa. Sobre os itens acima, assinale a opção CORRETA:",
+    "opcoes": [
+      "Apenas o item I está correto.",
+      "Apenas o item III está correto.",
+      "Apenas os itens II e IV estão corretos.",
+      "Apenas os itens III e IV estão corretos.",
+      "Apenas os itens I, II e IV estão corretos. 26 / 44 CHQAO 2025 | Caderno de questões Questões 41 a 50 41"
+    ],
+    "respostaCorreta": "Apenas o item III está correto.",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 40: B",
+    "id": 40
+  },
+  {
+    "texto": "De acordo com o Art. 28, da Lei Nr 6.880, de 9 de dezembro de 1980 – sentimento do dever, o pundonor militar e o decoro da classe impõem, a cada um dos integrantes das Forças Armadas, conduta moral e profissional irrepreensíveis, com a observância dos seguintes preceitos de ética militar. Assinale a ÚNICA alternativa que NÃO apresenta um preceito de ética militar:",
+    "opcoes": [
+      "Observar as normas de boa educação.",
+      "Abster-se, na inatividade, do uso das designações hierárquicas em atividades político-partidárias.",
+      "Cumprir seus deveres de cidadão.",
+      "Tratar o subordinado dignamente e com urbanidade.",
+      "Empregar todas as suas energias em benefício do serviço. 42"
+    ],
+    "respostaCorreta": "Tratar o subordinado dignamente e com urbanidade.",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 41: D",
+    "id": 41
+  },
+  {
+    "texto": "Segundo o § 1º, do Art 70, da Lei Nr 6.880, de 9 de dezembro de 1980 – interrupção da licença especial, da licença para tratar de interesse particular e da licença para acompanhar cônjuge ou companheiro(",
+    "opcoes": [
+      "Em caso de mobilização e estado de guerra.",
+      "Em caso de decretação de estado de emergência ou de estado de sítio.",
+      "Para cumprimento de sentença que não importe em restrição da liberdade individual.",
+      "Para cumprimento de punição disciplinar, conforme regulamentação de cada Força.",
+      "Em caso de denúncia ou de pronúncia em processo criminal ou indiciação em inquérito militar, a juízo da autoridade que efetivou a denúncia, a pronúncia ou a indiciação. 27 / 44 CHQAO 2025 | Caderno de questões Questões 41 a 50 43"
+    ],
+    "respostaCorreta": "Para cumprimento de sentença que não importe em restrição da liberdade individual.",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 42: C",
+    "id": 42
+  },
+  {
+    "texto": "De acordo com o Art. 128, da Lei Nr 6.880, de 9 de dezembro de 1980 – deserção do militar acarreta interrupção do serviço militar, com a consequente demissão ex officio para o oficial, ou a exclusão do serviço ativo, para a praça. Com base nos parágrafos do referido artigo, que tratam das situações de deserção, analise as afirmativas abaixo: I - A demissão do oficial ou a exclusão da praça com estabilidade assegurada processar-se-á após 1 (um) ano de agregação, se não houver captura ou apresentação voluntária antes desse prazo. II - O militar desertor que for capturado ou que se apresentar voluntariamente, depois de haver sido demitido ou excluído, será reincluído no serviço ativo e, a seguir, agregado para se ver processar. III - A praça sem estabilidade assegurada será automaticamente excluída após oficialmente declarada desertora. Analise as afirmativas acima e assinale a ÚNICA alternativa CORRETA:",
+    "opcoes": [
+      "Somente a afirmativa II está correta.",
+      "Nenhuma afirmativa está correta.",
+      "Apenas as afirmativas I e II estão corretas.",
+      "Somente as afirmativas II e III estão corretas.",
+      "Todas as afirmativas estão corretas. 44"
+    ],
+    "respostaCorreta": "Todas as afirmativas estão corretas. 44",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 43: E",
+    "id": 43
+  },
+  {
+    "texto": "O 1º Ten QAO ALFA, militar do 11º Batalhão de Comunicações e Guerra Eletrônica de Selva, situado em Manaus, foi designado para a missão de reparar o sistema de rede do 55º Batalhão de Infantaria de Selva, localizado em São Gabriel da Cachoeira. Para se deslocar de Manaus para São Gabriel da Cachoeira, o Ten ALFA embarcou em um avião bimotor de pequeno porte no dia previamente agendado. Infelizmente, durante a viagem, o avião apresentou problemas mecânicos e caiu no meio da floresta Amazônica. As buscas começaram no mesmo dia, porém, devido à imensidão da floresta e dificuldades nos trabalhos de resgate, o avião foi encontrado somente 35 (trinta e cinco) dias depois, sem sobreviventes. Todos os corpos foram encontrados, inclusive o do Ten ALFA. De acordo com os artigos 91 e 92, da Lei Nr 6.880, de 9 de dezembro de 1980 – considerada a situação do militar no 30º (trigésimo) dia de paradeiro ignorado:",
+    "opcoes": [
+      "Ausente.",
+      "Desertor.",
+      "Extraviado.",
+      "Desaparecido.",
+      "Falecido. 28 / 44 CHQAO 2025 | Caderno de questões Questões 41 a 50 45"
+    ],
+    "respostaCorreta": "Desaparecido.",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 44: D",
+    "id": 44
+  },
+  {
+    "texto": "Segundo o Art. 63, da Lei Nr 6.880, de 9 de dezembro de 1980 – afastamentos totais do serviço, anual e obrigatoriamente concedidos aos militares para descanso, a partir do último mês do ano a que se referem e durante todo o ano seguinte. O parágrafo primeiro do referido artigo, abaixo discriminado, trata sobre a fixação da duração das férias. § 1º O (__________) fixará a duração das férias, inclusive para os militares servindo em localidades especiais. Analise as alternativas abaixo e assinale a ÚNICA que completa a lacuna acima CORRETAMENTE:",
+    "opcoes": [
+      "Poder Executivo;",
+      "Comandante Militar de Área;",
+      "Ministro da Defesa;",
+      "Comandante de Organização Militar;",
+      "Comandante do Exército 29 / 44 CHQAO 2025 | Caderno de questões Questões 41 a 50 46"
+    ],
+    "respostaCorreta": "Poder Executivo;",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 45: A",
+    "id": 45
+  },
+  {
+    "texto": "O Senhor, possuidor do Curso de Habilitação ao Quadro Auxiliar de Oficiais, foi designado para trabalhar na função de Auxiliar da Divisão de Pessoal de sua Organização Militar. Algumas situações referentes a obrigações, deveres, direitos e prerrogativas dos militares, reguladas pela Lei Nr 6.880, de 9 de dezembro de 1980 – de assessorar o Chefe da Divisão de Pessoal, o Senhor colocou em prática os conhecimentos adquiridos no CHQAO e respondeu ao seguinte questionamento à luz da Lei Supracitada. Conforme previsto na alínea c, do inciso I, do Art. 98 da Lei Nr 6.880, de 9 de dezembro de 1980 – na Marinha, no Exército e na Aeronáutica, para praças, ocorrerá quando o militar atingir as seguintes idades-limite: Analise as alternativas e assinale a ÚNICA em que todas as afirmativas estão CORRETAS:",
+    "opcoes": [
+      "63 (sessenta e três) anos, nas graduações de Suboficial e Subtenente; 57 (cinquenta e sete) anos, nas graduações de Primeiro-Sargento e Taifeiro-Mor; 56 (cinquenta e seis) anos, nas graduações de Segundo-Sargento e Taifeiro de Primeira Classe; 55 (cinquenta e cinco) anos, nas graduações de Terceiro-Sargento e Taifeiro de Segunda Classe; 53 (cinquenta e três) anos, na graduação de Cabo; 50 (cinquenta) anos, nas graduações de Marinheiro, Soldado e Soldado de Primeira Classe.",
+      "63 (sessenta e três) anos, nas graduações de Suboficial e Subtenente; 57 (cinquenta e sete) anos, nas graduações de Primeiro-Sargento e Taifeiro-Mor; 56 (cinquenta e seis) anos, nas graduações de Segundo-Sargento e Taifeiro de Primeira Classe; 55 (cinquenta e cinco) anos, na graduação de Terceiro-Sargento; 54 (cinquenta e quatro) anos, nas graduações de Cabo e Taifeiro de Segunda Classe; 50 (cinquenta) anos, nas graduações de Marinheiro, Soldado e Soldado de Primeira Classe.",
+      "63 (sessenta e três) anos, nas graduações de Suboficial e Subtenente; 59 (cinquenta e nove) anos, nas graduações de Primeiro-Sargento e Taifeiro-Mor; 56 (cinquenta e seis) anos, nas graduações de Segundo-Sargento e Taifeiro de Primeira Classe; 55 (cinquenta e cinco) anos, na graduação de Terceiro-Sargento; 54 (cinquenta e quatro) anos, nas graduações de Cabo e Taifeiro de Segunda Classe; 50 (cinquenta) anos, nas graduações de Marinheiro, Soldado e Soldado de Primeira Classe.",
+      "63 (sessenta e três) anos, nas graduações de Suboficial e Subtenente; 57 (cinquenta e sete) anos, nas graduações de Primeiro-Sargento e Taifeiro-Mor; 56 (cinquenta e seis) anos, nas graduações de Segundo-Sargento e Taifeiro de Primeira Classe; 55 (cinquenta e cinco) anos, nas graduações de Terceiro-Sargento e Taifeiro de Segunda Classe; 54 (cinquenta e quatro) anos, na graduação de Cabo; 51 (cinquenta e um) anos, nas graduações de Marinheiro, Soldado e Soldado de Primeira Classe.",
+      "63 (sessenta e três) anos, nas graduações de Suboficial e Subtenente; 57 (cinquenta e sete) anos, nas graduações de Primeiro-Sargento e Taifeiro-Mor; 56 (cinquenta e seis) anos, nas graduações de Segundo-Sargento e Taifeiro de Primeira Classe; 55 (cinquenta e cinco) anos, nas graduações de Terceiro-Sargento e Taifeiro de Segunda Classe; 54 (cinquenta e quatro) anos, na graduação de Cabo; 50 (cinquenta) anos, nas graduações de Marinheiro, Soldado e Soldado de Primeira Classe. 30 / 44 CHQAO 2025 | Caderno de questões Questões 41 a 50 47"
+    ],
+    "respostaCorreta": "63 (sessenta e três) anos, nas graduações de Suboficial e Subtenente; 57 (cinquenta e sete) anos, nas graduações de Primeiro-Sargento e Taifeiro-Mor; 56 (cinquenta e seis) anos, nas graduações de Segundo-Sargento e Taifeiro de Primeira Classe; 55 (cinquenta e cinco) anos, na graduação de Terceiro-Sargento; 54 (cinquenta e quatro) anos, nas graduações de Cabo e Taifeiro de Segunda Classe; 50 (cinquenta) anos, nas graduações de Marinheiro, Soldado e Soldado de Primeira Classe.",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 46: B",
+    "id": 46
+  },
+  {
+    "texto": "À luz do Art. 60, da Lei nº 6880 de 9 de dezembro de 1980 (serão efetuadas pelos critérios de ____________________, ____________________, ou, ainda, por ______________ e ______________.” Dentre as alternativas abaixo, assinale aquela que completa CORRETAMENTE a sequência das lacunas.",
+    "opcoes": [
+      "antiguidade – merecimento ou escolha – bravura – post Mortem.",
+      "escolha – merecimento ou escolha – bravura – in honore.",
+      "antiguidade – merecimento ou Escolha – indicação – post mortem.",
+      "antiguidade – merecimento – bravura – in honore.",
+      "escolha – merecimento – Indicação – post mortem. 48"
+    ],
+    "respostaCorreta": "antiguidade – merecimento ou escolha – bravura – post Mortem.",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 47: A",
+    "id": 47
+  },
+  {
+    "texto": "De acordo com Art. 3º e seu § 1º, alínea",
+    "opcoes": [
+      "I – II – III.",
+      "II – III – IV.",
+      "III – IV – V.",
+      "I – III – V.",
+      "II – III – IV. 31 / 44 CHQAO 2025 | Caderno de questões Questões 41 a 50 49"
+    ],
+    "respostaCorreta": "II – III – IV.",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 48: B/E",
+    "id": 48
+  },
+  {
+    "texto": "O 1º Sargento BELTRANO foi designado pelo Comandante de sua Organização Militar (OM) para ministrar uma Instrução de Quadros, destinada aos militares orgânicos da OM, referente ao Tema “Do Comando e da Subordinação”, previsto nos artigos 34, 35, 36, 37, 38, 39, 40 e 41, do Capítulo II, da Seção III, do elaborou uma instrução militar aprofundada sobre o referido tema. Julgue as afirmativas a seguir, referentes ao assunto supracitado, colocando “V” para as sentenças consideradas VERDADEIRAS e “F” para as consideradas FALSAS. ( ) O comando não é vinculado ao grau hierárquico e constitui uma prerrogativa pessoal, em cujo exercício o militar se define e se caracteriza como chefe. ( ) Os Marinheiros-Recrutas, Recrutas, Soldados-Recrutas e Soldados-de-Segunda-Classe constituem os elementos incorporados às Forças Armadas para a prestação do serviço militar inicial. ( ) Às praças especiais cabe a rigorosa observância das prescrições dos regulamentos que lhes são pertinentes, exigindo-se-lhes inteira dedicação ao estudo e ao aprendizado técnico-profissional. ( ) Às praças especiais não se assegura a prestação do serviço militar inicial. ( ) A subordinação não afeta, de modo algum, a dignidade pessoal do militar e decorre, exclusivamente, da estrutura hierarquizada das Forças Armadas. Analise as opções acima e assinale a ÚNICA alternativa CORRETA:",
+    "opcoes": [
+      "F - V - V - F - V.",
+      "F - V - F - V - V.",
+      "V - V - F - F - V.",
+      "V - F - V - V - F.",
+      "F - V - V - F - F. 32 / 44 CHQAO 2025 | Caderno de questões Questões 41 a 50 50"
+    ],
+    "respostaCorreta": "F - V - V - F - V.",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 49: A",
+    "id": 49
+  },
+  {
+    "texto": "O 1º Sgt BELTRANO, do 139º Batalhão de Comunicações, foi designado como sindicante em sindicância que busca apurar as condições e consequências de um acidente sofrido por um militar do 139º B Com. Com algumas dúvidas em relação ao tema “incapacidade definitiva de militar”, o 1º Sgt BELTRANO buscou auxílio do ST BRAVO, militar com ampla experiência na 1ª Seção da OM. O ST BRAVO esclareceu que o Art 108, do pode sobrevir em consequência das seguintes situações: I - Ferimento recebido em campanha ou na manutenção da ordem pública; II - Enfermidade contraída em campanha ou na manutenção da ordem pública, ou enfermidade cuja causa eficiente decorra de uma dessas situações; III - Acidente em serviço; IV - Doença, moléstia ou enfermidade adquirida em tempo de paz, com relação de causa e efeito às condições inerentes ao serviço; V - Tuberculose ativa, alienação mental, esclerose múltipla, neoplasia maligna, cegueira, lepra, paralisia irreversível e incapacitante, cardiopatia grave, mal de Parkinson, pênfigo, espondiloartrose anquilosante, nefropatia grave e outras moléstias que a lei indicar com base nas conclusões da medicina especializada; e VI - Acidente ou doença, moléstia ou enfermidade, sem relação de causa e efeito com o serviço. Analise as assertivas acima e assinale a ÚNICA alternativa CORRETA:",
+    "opcoes": [
+      "I, III e V estão corretas.",
+      "Somente a VI está correta.",
+      "I, III, IV e V estão corretas.",
+      "II e VI estão corretas.",
+      "Todas estão corretas. 33 / 44 CHQAO 2025 | Caderno de questões Questões 51 a 60 51"
+    ],
+    "respostaCorreta": "Todas estão corretas. 33 / 44 CHQAO 2025 | Caderno de questões Questões 51 a 60 51",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 50: E",
+    "id": 50
+  },
+  {
+    "texto": "Indique “V” para as sentenças verdadeiras ou “F” para as sentenças falsas para as afirmações abaixo: ( ) A sindicância pode ser instaurada mesmo quando já há processo judicial em curso tratando sobre o mesmo fato. ( ) Caso o sindicado se recuse a comparecer, a sindicância deverá ser arquivada. ( ) A figura do sindicado pode surgir ao longo do processo, mesmo que não exista no momento da instauração. ( ) As provas emprestadas só podem ser utilizadas com autorização judicial. ( ) A sindicância não pode ser instaurada por subcomandante de grande comando. Analise as afirmativas acima e marque a ÚNICA opção CORRETA:",
+    "opcoes": [
+      "V - F - V - F - F.",
+      "F - V - V - V - V.",
+      "F - V - F - V - F.",
+      "V - F - V - F - V.",
+      "F - F - V - V - V. 52"
+    ],
+    "respostaCorreta": "V - F - V - F - F.",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 51: A",
+    "id": 51
+  },
+  {
+    "texto": "Relacione os prazos com seus respectivos eventos na sindicância: 3 dias úteis, 5 dias corridos, 10 dias úteis, 3 dias úteis, 30 dias corridos. I - ___ Prazo para oferecimento de alegações finais pelo sindicado, contados do recebimento da notificação. II - ___ Prazo para autoridade instauradora dar solução à sindicância após recebimento dos autos. III - ___ Prazo mínimo de antecedência para notificação do sindicado da realização das diligências de instrução da sindicância. IV - ___ Prazo inicial para conclusão da sindicância. V - ___ Prazo onde é facultado ao sindicado o oferecimento de defesa prévia, contados da inquirição do sindicado. Analise as afirmativas acima e marque a ÚNICA opção CORRETA:",
+    "opcoes": [
+      "3 dias úteis, 30 dias corridos, 5 dias corridos, 10 dias úteis e 3 dias úteis.",
+      "3 dias úteis, 10 dias úteis, 5 dias corridos, 30 dias corridos e 3 dias úteis.",
+      "5 dias corridos, 10 dias úteis, 3 dias úteis, 30 dias corridos e 3 dias úteis.",
+      "5 dias corridos, 30 dias corridos, 3 dias úteis, 10 dias úteis e 3 dias úteis.",
+      "30 dias corridos, 10 dias úteis, 3 dias úteis, 5 dias corridos e 3 dias úteis. 34 / 44 CHQAO 2025 | Caderno de questões Questões 51 a 60 53"
+    ],
+    "respostaCorreta": "5 dias corridos, 10 dias úteis, 3 dias úteis, 30 dias corridos e 3 dias úteis.",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 52: C",
+    "id": 52
+  },
+  {
+    "texto": "Relacione nas lacunas a seguir, o prazo da respectiva situação prevista no IPM: 1 - ( ) Prazo de incomunicabilidade do indiciado de acordo com o Art. 17 do CPPM. 2 - ( ) Prazo de conclusão do IPM com indiciado solto, conforme o caput do Art. 20 do CPPM. 3 - ( ) Prazo máximo de detenção sem flagrante, que o indiciado poderá ficar detido sem haver a prorrogação do prazo da detenção, de acordo com o Art. 18 do CPPM. 4 - ( ) Prazo de prorrogação do IPM com indiciado solto constante no § 1º do Art.20 do CPPM. 5 - ( ) Prazo para restituição dos autos ao juiz, após devolução a autoridade policial militar, de acordo com o Parágrafo Único do Art. 26 do CPPM. I) 40 dias. II) 3 dias. III) 30 dias. IV) 20 dias. V) até 20 dias. Analise as afirmativas acima e marque a ÚNICA opção CORRETA:",
+    "opcoes": [
+      "1 (I) - 2 (II) - 3 (III) - 4 (IV) - 5 (V).",
+      "1 (II) - 2 (I) - 3 (IV) - 4 (V) - 5 (III).",
+      "1 (IV) - 2 (I) - 3 (II) - 4 (V) - 5 (III).",
+      "1 (II) - 2 (I) - 3 (III) - 4 (V) - 5 (IV).",
+      "1 (II) - 2 (I) - 3 (III) - 4 (IV) - 5 (V). 54"
+    ],
+    "respostaCorreta": "1 (II) - 2 (I) - 3 (III) - 4 (IV) - 5 (V). 54",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 53: E",
+    "id": 53
+  },
+  {
+    "texto": "Segundo o Art. 18 do Código de Processo Penal Militar (CPPM), o prazo máximo que se poderá PRORROGAR a DETENÇÃO do indiciado durante investigação sem flagrante é de:",
+    "opcoes": [
+      "mais 15 dias.",
+      "mais 48 horas.",
+      "mais 20 dias.",
+      "mais 10 dias.",
+      "mais 30 dias. 35 / 44 CHQAO 2025 | Caderno de questões Questões 51 a 60 55"
+    ],
+    "respostaCorreta": "mais 20 dias.",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 54: C",
+    "id": 54
+  },
+  {
+    "texto": "Assinale a alternativa que caracteriza a DESERÇÃO ESPECIAL:",
+    "opcoes": [
+      "Militar ausente por mais de oito dias.",
+      "Militar que foge após praticar crime.",
+      "Militar que abandona o serviço em guerra.",
+      "Militar que não se apresenta no momento da partida do navio ou aeronave de que é tripulante.",
+      "Militar que omite doença para obter dispensa. 56"
+    ],
+    "respostaCorreta": "Militar que não se apresenta no momento da partida do navio ou aeronave de que é tripulante.",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 55: D",
+    "id": 55
+  },
+  {
+    "texto": "É possível a expedição de Carta Precatória quando a residência do denunciante ou ofendido, da testemunha ou do sindicado estiver situada em localidade diferente daquela em que foi instaurada a sindicância. Neste sentido marque a ÚNICA opção CORRETA que possui os documentos que constarão no envio de Carta Precatório, à luz da Portaria - C Ex Nº 2.394, de 5 de dezembro de 2024.",
+    "opcoes": [
+      "Despacho do Sindicante, a cópia da portaria de instauração da sindicância e a relação das perguntas a serem feitas ao inquirido.",
+      "O ofício com pedido de inquirição, BI que publicou a designação do Sindicante e a relação das perguntas a serem feitas ao inquirido.",
+      "Notificação prévia, relação das perguntas a serem feitas ao inquirido e BI que publicou a designação do Sindicante.",
+      "O ofício com pedido de inquirição, a cópia da portaria de instauração da sindicância e a notificação prévia.",
+      "O ofício com pedido de inquirição, a cópia da portaria de instauração da sindicância e a relação das perguntas a serem feitas ao inquirido. 36 / 44 CHQAO 2025 | Caderno de questões Questões 51 a 60 57"
+    ],
+    "respostaCorreta": "O ofício com pedido de inquirição, a cópia da portaria de instauração da sindicância e a relação das perguntas a serem feitas ao inquirido. 36 / 44 CHQAO 2025 | Caderno de questões Questões 51 a 60 57",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 56: E",
+    "id": 56
+  },
+  {
+    "texto": "O crime de insubmissão previsto no Art. 183 do Código Penal Militar caracteriza-se por deixar de apresentar-se o convocado à incorporação, dentro do prazo que lhe foi marcado, ou, apresentando-se, ausentar-se antes do ato oficial de incorporação, tendo como pena impedimento, de três meses a um ano. Analise as alternativas abaixo e assinale a ÚNICA opção CORRETA que configure caso de diminuição de pena no crime de insubmissão:",
+    "opcoes": [
+      "Pela ignorância ou a errada compreensão dos atos da convocação militar, quando escusáveis.",
+      "Pela ignorância ou a errada compreensão dos atos da convocação militar, quando inescusáveis.",
+      "Pela captura dentro do prazo de um ano, contado do último dia marcado para a apresentação.",
+      "Pela apresentação voluntária dentro do prazo de dois anos, contado do último dia marcado para a apresentação.",
+      "Pela apresentação voluntária dentro do prazo de um ano, contado do primeiro dia marcado para a apresentação. 58"
+    ],
+    "respostaCorreta": "Pela ignorância ou a errada compreensão dos atos da convocação militar, quando escusáveis.",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 57: A",
+    "id": 57
+  },
+  {
+    "texto": "O Código Penal Militar trata entre outros assuntos da Aplicação da Lei Penal Militar. Analise as alternativas abaixo e marque a ÚNICA opção CORRETA sobre retroatividade de lei mais benigna prevista no CPM em seu Art. 2º, §1º:",
+    "opcoes": [
+      "A lei posterior que, de qualquer outro modo, favorece o agente, aplica-se retroativamente, desde que não tenha sobrevindo sentença condenatória irrecorrível.",
+      "De acordo com o CPM para que ocorra a retroatividade é necessário a manifestação de vontade do agente.",
+      "A lei posterior que, de qualquer outro modo, favorece o agente, aplica-se retroativamente, ainda quando já tenha sobrevindo sentença condenatória irrecorrível.",
+      "De acordo com o CPM a lei penal militar retroagirá somente nos crimes militares em tempo de paz.",
+      "A lei penal militar não retroage. 37 / 44 CHQAO 2025 | Caderno de questões Questões 51 a 60 59"
+    ],
+    "respostaCorreta": "A lei posterior que, de qualquer outro modo, favorece o agente, aplica-se retroativamente, ainda quando já tenha sobrevindo sentença condenatória irrecorrível.",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 58: C",
+    "id": 58
+  },
+  {
+    "texto": "O Código de Processo Penal Militar no seu artigo 17, dispõe sobre incomunicabilidade do indiciado, diante disso qual o prazo que o encarregado do inquérito poderá manter incomunicável o indiciado, que estiver legalmente preso:",
+    "opcoes": [
+      "02 (dois) dias no máximo.",
+      "05 (cinco) dias no máximo.",
+      "07 (sete) dias no máximo.",
+      "08 (oito) dias no máximo.",
+      "03 (três) dias no máximo. 60"
+    ],
+    "respostaCorreta": "03 (três) dias no máximo. 60",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 59: E",
+    "id": 59
+  },
+  {
+    "texto": "No crime de deserção de acordo com o Art. 132 do CPM, embora decorrido o prazo da prescrição, está só extingue a punibilidade quando o desertor atinge a idade de:",
+    "opcoes": [
+      "35 (trinta e cinco) anos, e, se Oficial, a de 60 (sessenta) anos.",
+      "40 (quarenta) anos, e, se Oficial, a de 60 (sessenta) anos.",
+      "65 (sessenta e cinco) anos, e, se Oficial, a de 60 (sessenta) anos.",
+      "45 (quarenta e cinco) anos, e, se Oficial, a de 60 (sessenta) anos.",
+      "Nenhuma das alternativas anteriores. 38 / 44 CHQAO 2025 | Caderno de questões Questões 61 a 70 61"
+    ],
+    "respostaCorreta": "45 (quarenta e cinco) anos, e, se Oficial, a de 60 (sessenta) anos.",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 60: D",
+    "id": 60
+  },
+  {
+    "texto": "Uma determinada Organização Militar realizará uma Licitação na modalidade Leilão com o objetivo de alienar algumas viaturas consideradas obsoletas. Conforme a Lei 14., de acordo com previsto para essa modalidade de licitação, o VENCEDOR será definido com base no seguinte CRITÉRIO:",
+    "opcoes": [
+      "Oferecer o maior lance.",
+      "Realizar o pagamento no menor prazo.",
+      "Apresentar o menor preço ou maior desconto.",
+      "Atender aos requisitos do edital, apresentando o lance de maior desconto.",
+      "Apresentar melhor proposta de uso das viaturas. 62"
+    ],
+    "respostaCorreta": "Oferecer o maior lance.",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 61: A",
+    "id": 61
+  },
+  {
+    "texto": "De acordo com a Lei 14., pode-se afirmar que SOBREPREÇO é:",
+    "opcoes": [
+      "Um mecanismo legal que favorece o contratante.",
+      "O preço orçado para licitação ou contratado em valor expressivamente superior aos preços referenciais de mercado.",
+      "A deficiência na execução de obras e de serviços de engenharia que resulte em diminuição da sua qualidade, vida útil ou segurança.",
+      "A contratação de bens ou serviços por valores expressivamente inferiores aos preços praticados no mercado.",
+      "A medição de quantidades superiores às efetivamente executadas ou fornecidas pelo contratado. 63"
+    ],
+    "respostaCorreta": "O preço orçado para licitação ou contratado em valor expressivamente superior aos preços referenciais de mercado.",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 62: B",
+    "id": 62
+  },
+  {
+    "texto": "Uma Organização Militar (OM) necessita contratar um serviço que só pode ser fornecido, por uma única empresa. Conforme a Lei 14.. Dentre as alternativas abaixo, qual seria o PROCESSO DE AQUISIÇÃO do referido serviço?",
+    "opcoes": [
+      "Inexigibilidade de licitação.",
+      "Diálogo Competitivo.",
+      "Concorrência.",
+      "Concurso.",
+      "Leilão. 39 / 44 CHQAO 2025 | Caderno de questões Questões 61 a 70 64"
+    ],
+    "respostaCorreta": "Inexigibilidade de licitação.",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 63: A",
+    "id": 63
+  },
+  {
+    "texto": "Uma Organização Militar está conduzindo a fase preparatória de um processo licitatório. De acordo com a Lei 14., a definição do objeto para atender a uma necessidade pode ser realizada por meio de todas opções abaixo, EXCETO:",
+    "opcoes": [
+      "Termo de referência.",
+      "Anteprojeto.",
+      "Projeto básico.",
+      "Projeto executivo.",
+      "Minuta do contrato. 65"
+    ],
+    "respostaCorreta": "Minuta do contrato. 65",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 64: E",
+    "id": 64
+  },
+  {
+    "texto": "Uma Organização Militar está conduzindo um processo de licitação que atualmente encontra-se na fase de habilitação. Nesse momento, verifica-se o conjunto de informações e documentos necessários e suficientes para demonstrar a capacidade do licitante de realizar o objeto da licitação. Com base na Lei 14.. Selecione a ÚNICA alternativa CORRETA referente a essa fase do processo:",
+    "opcoes": [
+      "Serão sempre exigidos documentos relativos à regularidade fiscal de todos os licitantes participantes do processo de licitação.",
+      "Não será exigida do licitante a declaração de que cumpre as exigências de reserva de cargos para pessoa com deficiência e para reabilitado a Previdência Social, previstas em lei e em outras normas específicas.",
+      "Será exigida a documentação de habilitação de todos os participantes do processo de Licitação quando a fase de habilitação suceder a de julgamento.",
+      "As condições de habilitação não podem ser definidas no edital.",
+      "Será exigida a apresentação dos documentos de habilitação apenas pelo licitante vencedor, exceto quando a fase de habilitação anteceder a de julgamento. 40 / 44 CHQAO 2025 | Caderno de questões Questões 61 a 70 66"
+    ],
+    "respostaCorreta": "Será exigida a apresentação dos documentos de habilitação apenas pelo licitante vencedor, exceto quando a fase de habilitação anteceder a de julgamento. 40 / 44 CHQAO 2025 | Caderno de questões Questões 61 a 70 66",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 65: E",
+    "id": 65
+  },
+  {
+    "texto": "O Sr, designado Pregoeiro pela Autoridade Competente, é responsável pelo Pregão Eletrônico para aquisição de material de expediente para sua Organização Militar. Durante a condução do processo licitatório, observando o Decreto 10. é estabelecido que a Autoridade Competente possui diversas atribuições, EXCETO:",
+    "opcoes": [
+      "Determinar a abertura do processo licitatório.",
+      "Homologar o resultado da licitação.",
+      "Adjudicar o objeto da licitação, quando não houver recursos.",
+      "Celebrar o contrato ou assinar a ata de registro de preços.",
+      "Decidir os recursos contra os atos do pregoeiro, quando este mantiver sua decisão. 67"
+    ],
+    "respostaCorreta": "Adjudicar o objeto da licitação, quando não houver recursos.",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 66: C",
+    "id": 66
+  },
+  {
+    "texto": "A Lei 14., prevê a responsabilização administrativa pelas infrações cometidas pelos Licitantes, nela estão definidas em quais infrações o licitante ou o contratado será responsabilizado administrativamente. Das opções abaixo, marque a opção que NÃO condiz com uma infração administrativa prevista:",
+    "opcoes": [
+      "Deixar de entregar a documentação exigida para o certame.",
+      "Dar causa à inexecução total do contrato.",
+      "Cadastrar lance com valor acima do estimado pela Administração, contrariando o valor previsto em edital.",
+      "Fraudar a licitação ou praticar ato fraudulento na execução do contrato.",
+      "Ensejar o retardamento da execução ou da entrega do objeto da licitação sem motivo justificado. 68"
+    ],
+    "respostaCorreta": "Cadastrar lance com valor acima do estimado pela Administração, contrariando o valor previsto em edital.",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 67: C",
+    "id": 67
+  },
+  {
+    "texto": "De acordo com a Lei 14., a divulgação dos contratos, no Portal Nacional de Contratações Públicas (PNCP), é condição indispensável para sua eficácia e de seus Aditamentos e deverá ocorrer nos seguintes prazos, contados da data de sua assinatura:",
+    "opcoes": [
+      "I - 15 (quinze) dias úteis, no caso de licitação; II - 10 (dez) dias úteis, no caso de contratação direta.",
+      "I - 20 (vinte) dias úteis, no caso de licitação; II - 15 (quinze) dias úteis, no caso de contratação direta.",
+      "I - 10 (dez) dias úteis, no caso de licitação; II - 8 (oito) dias úteis, no caso de contratação direta.",
+      "I - 20 (vinte) dias úteis, no caso de licitação; II - 10 (dez) dias úteis, no caso de contratação direta.",
+      "I - 8 (oito) dias úteis, no caso de licitação; II - 10 (dez) dias úteis, no caso de contratação direta. 41 / 44 CHQAO 2025 | Caderno de questões Questões 61 a 70 69"
+    ],
+    "respostaCorreta": "I - 20 (vinte) dias úteis, no caso de licitação; II - 10 (dez) dias úteis, no caso de contratação direta.",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 68: D",
+    "id": 68
+  },
+  {
+    "texto": "No contexto do Processo de Contratação Direta, citado na Lei nº 14.. Analise as alternativas abaixo e marque a opção que NÃO se configura como um caso de DISPENSA DE LICITAÇÃO:",
+    "opcoes": [
+      "Aquisição de medicamentos destinados exclusivamente ao tratamento de doenças raras definidas pelo Ministério da Saúde.",
+      "Nos casos de guerra, estado de defesa, estado de sítio, intervenção federal ou de grave perturbação da ordem.",
+      "Para contratação de profissionais para compor a comissão de avaliação de critérios de técnica, quando se tratar de profissional técnico de notória especialização.",
+      "Aquisição ou locação de imóvel cujas características de instalações e de localização tornem necessária sua escolha.",
+      "Aquisição ou restauração de obras de arte e objetos históricos, de autenticidade certificada, desde que inerente às finalidades do órgão ou com elas compatível. 70"
+    ],
+    "respostaCorreta": "Aquisição ou locação de imóvel cujas características de instalações e de localização tornem necessária sua escolha.",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 69: D",
+    "id": 69
+  },
+  {
+    "texto": "A duração dos contratos regidos pela Lei 14. será a prevista em edital, e deverão ser observadas, no momento da contratação e a cada exercício financeiro, a disponibilidade de créditos orçamentários. No que diz respeito as contratações que gere receita e no contrato de eficiência que gere economia para a Administração. Conforme a Lei 14., assinale a alternativa CORRETA relacionada aos prazos previstos:",
+    "opcoes": [
+      "Até 10 (dez) anos, nos contratos sem investimento.",
+      "Até 10 (dez) anos, nos contratos com investimento, assim considerados aqueles que impliquem a elaboração de benfeitorias permanentes, realizadas exclusivamente a expensas do contratado, que serão revertidas ao patrimônio da Administração Pública ao término do contrato.",
+      "Até 15 (quinze) anos, nos contratos sem investimento.",
+      "Até 35 (trinta e cinco) anos, nos contratos sem investimento.",
+      "Até 25 (vinte e cinco) anos, nos contratos com investimento, assim considerados aqueles que impliquem a elaboração de benfeitorias permanentes, realizadas exclusivamente a expensas do contratado, que serão revertidas ao patrimônio da Administração Pública ao término do contrato. 42 / 44 CHQAO 2025 | Caderno de questões Questões 61 a 70"
+    ],
+    "respostaCorreta": "Até 10 (dez) anos, nos contratos sem investimento.",
+    "fundamentacao": "Gabarito oficial CHQAO 2025 - Questão 70: A",
+    "id": 70
+  }
 ]
