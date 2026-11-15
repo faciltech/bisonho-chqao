@@ -1,1 +1,314 @@
-[]
+[
+    {
+        "texto": "De acordo com o texto introdutório da obra 'TikTok Intelligence – Rastreamento e Investigação Profissional', o termo OSINT (Open Source Intelligence) é conceituado como:",
+        "opcoes": [
+            "A interceptação telemática e quebra de sigilo judicial de dados em redes proprietárias.",
+            "A coleta e análise de informações obtidas em fontes abertas.",
+            "O rastreamento exclusivo de tráfego de rede criptografado via protocolos de terminal.",
+            "A infiltração virtual em perfis fechados por meio de engenharia social ativa."
+        ],
+        "respostaCorreta": "A coleta e análise de informações obtidas em fontes abertas.",
+        "fundamentacao": "Item 1 (Introdução à OSINT, p. 10): 'OSINT (Open Source Intelligence) refere-se à coleta e análise de informações obtidas'.",
+        "id": 1
+    },
+    {
+        "texto": "Na seção 'Sobre o autor', são detalhadas as credenciais acadêmicas e profissionais de Eduardo Amaral. Quanto à sua graduação de nível superior, o autor é formado em:",
+        "opcoes": [
+            "Ciência da Computação.",
+            "Segurança da Informação.",
+            "Redes de Computadores.",
+            "Engenharia de Software."
+        ],
+        "respostaCorreta": "Redes de Computadores.",
+        "fundamentacao": "Seção 'Sobre o autor' (p. 6): 'É graduado em Redes de Computadores e possui pós-graduações em Hacker Ético e Cibernética, Inteligência Cibernética e Inteligência e Investigação em Fontes Abertas (OSINT)'.",
+        "id": 2
+    },
+    {
+        "texto": "Com base na biografia técnica de Eduardo Amaral apresentada na obra, assinale a opção que indica o título do livro de sua autoria publicado no ano de 2025:",
+        "opcoes": [
+            "Shell Script para OSINT.",
+            "Inteligência Cibernética Avançada.",
+            "Investigação Digital em Redes Sociais.",
+            "Fundamentos de Penetration Test e OSINT."
+        ],
+        "respostaCorreta": "Shell Script para OSINT.",
+        "fundamentacao": "Seção 'Sobre o autor' (p. 6): 'Autor do livro Shell Script para OSINT, publicado em 2025 pela WB Editora, dedica-se à disseminação de conhecimento técnico...'.",
+        "id": 3
+    },
+    {
+        "texto": "Dentre as diversas certificações técnicas listadas no perfil profissional do autor, consta a certificação CPME. Essa sigla corresponde a:",
+        "opcoes": [
+            "Certified Professional in Mobile Extraction.",
+            "Certified Practitioner em Microexpressões.",
+            "Cellebrite Physical Malware Examiner.",
+            "Certified PenTester in Mobile Environments."
+        ],
+        "respostaCorreta": "Certified Practitioner em Microexpressões.",
+        "fundamentacao": "Seção 'Sobre o autor' (p. 6): '...além da certificação CPME (Certified Practitioner em Microexpressões)'.",
+        "id": 4
+    },
+    {
+        "texto": "No capítulo 13 do sumário, é apresentada uma metodologia estruturada de investigação dividida em cinco etapas sequenciais. Assinale a alternativa que apresenta a correta correlação das etapas que compõem o mnemônico metodológico:",
+        "opcoes": [
+            "O – Obter; D – Decodificar; P – Processar; A – Armazenar; R – Rastrear.",
+            "O – Observar; D – Diagnosticar; P – Planejar; A – Agir; R – Relatar.",
+            "O – Organizar; D – Documentar; P – Pivotar; A – Analisar; R – Relatar.",
+            "O – Operar; D – Descrever; P – Pesquisar; A – Auditar; R – Revisar."
+        ],
+        "respostaCorreta": "O – Organizar; D – Documentar; P – Pivotar; A – Analisar; R – Relatar.",
+        "fundamentacao": "Capítulo 13 (Sumário, p. 8-9): '13.1. O – Organizar; 13.2. D – Documentar; 13.3. P – Pivotar; 13.4. A – Analisar; 13.5. R – Relatar'.",
+        "id": 5
+    },
+    {
+        "texto": "No Capítulo 12 da obra, dedicado a 'Ferramentas de terminal para análise do TikTok', o autor aborda especificamente duas ferramentas disponibilizadas no GitHub. São elas:",
+        "opcoes": [
+            "TikSpyder e Clawk.",
+            "TikTok-Scraper e Sherlock.",
+            "OSINT-Spy e TikExtract.",
+            "TerminalTok e WebCrawler."
+        ],
+        "respostaCorreta": "TikSpyder e Clawk.",
+        "fundamentacao": "Capítulo 12 (Sumário, p. 8): '12.1. TikSpyder – GitHub Tool; 12.2. Clawk – GitHub Tool'.",
+        "id": 6
+    },
+    {
+        "texto": "No Capítulo 11 do sumário ('Exemplo prático de recuperação de informações de contas deletadas'), é analisado um caso de estudo específico. Qual perfil é utilizado como objeto desse estudo de caso?",
+        "opcoes": [
+            "@itspolokid",
+            "@investigacaotik",
+            "@osintbrasil",
+            "@cyberwarrior"
+        ],
+        "respostaCorreta": "@itspolokid",
+        "fundamentacao": "Capítulo 11 (Sumário, p. 8): '11.1. Caso de estudo: @itspolokid'.",
+        "id": 7
+    },
+    {
+        "texto": "Conforme disposto no sumário da obra, o estudo analítico do código-fonte do TikTok para inteligência foi estruturado em duas partes (Capítulos 5 e 6). Na Parte 1 (Capítulo 5), destaca-se a identificação e coleta de qual elemento fundamental?",
+        "opcoes": [
+            "BioLink.",
+            "User ID.",
+            "Timestamp do primeiro comentário.",
+            "Número de curtidas totais."
+        ],
+        "respostaCorreta": "User ID.",
+        "fundamentacao": "Capítulo 5 (Sumário, p. 7): '5.2. Importância do User ID; 5.3. Como identificar e coletar o User ID'.",
+        "id": 8
+    },
+    {
+        "texto": "Na seção de 'Agradecimentos' da obra, o autor faz uma menção especial a um profissional cuja trajetória e compartilhamento de conhecimento em tecnologia, investigação e segurança da informação serviram de inspiração. Trata-se do:",
+        "opcoes": [
+            "Dr. Emerson Wendt.",
+            "Clebson Ferreira de Paula Vieira.",
+            "Marina dos Anjos Martins de Oliveira.",
+            "Eduardo Amaral."
+        ],
+        "respostaCorreta": "Dr. Emerson Wendt.",
+        "fundamentacao": "Seção 'Agradecimentos' (p. 5): 'Meu agradecimento especial ao meu amigo Dr. Emerson Wendt, cuja trajetória profissional, dedicação ao ensino e compartilhamento de conhecimento servem de inspiração...'.",
+        "id": 9
+    },
+    {
+        "texto": "De acordo com o Capítulo 10 do sumário da obra ('Sites espelhos e recuperação de dados'), qual ferramenta externa consagrada de preservação de histórico da web é especificamente analisada no item 10.4?",
+        "opcoes": [
+            "Archive.today.",
+            "Wayback Machine – Internet Archive.",
+            "Google Cache Viewer.",
+            "GhostArchive."
+        ],
+        "respostaCorreta": "Wayback Machine – Internet Archive.",
+        "fundamentacao": "Capítulo 10 (Sumário, p. 8): '10.4. Wayback Machine – Internet Archive'.",
+        "id": 10
+    },
+    {
+        "texto": "No contexto da investigação em fontes abertas aplicada ao TikTok, o item '16.3. Dicas de eficiência' recomenda expressamente a adoção de determinadas práticas operacionais. Dentre elas, destaca-se:",
+        "opcoes": [
+            "O uso exclusivo de ferramentas proprietárias e pagas para compilação de relatórios.",
+            "A utilização de atalhos de teclado, tais como Ctrl + F e F12.",
+            "A eliminação da documentação de processos para conferir agilidade à coleta de dados.",
+            "A priorização de tarefas manuais em detrimento da automação de rotinas."
+        ],
+        "respostaCorreta": "A utilização de atalhos de teclado, tais como Ctrl + F e F12.",
+        "fundamentacao": "Item 16.3: 'Dicas de eficiência: • Usar atalhos de teclado (Ctrl + F, F12). • Automatizar tarefas repetitivas. • Manter biblioteca de ferramentas. • Documentar processo.'",
+        "id": 11
+    },
+    {
+        "texto": "De acordo com o item 17 ('Conclusão e próximos passos'), a disciplina de OSINT no TikTok é conceituada como uma prática em evolução que combina:",
+        "opcoes": [
+            "Técnicas de engenharia social ativa com invasão de sistemas computacionais.",
+            "Técnicas tradicionais de investigação com ferramentas digitais modernas.",
+            "Coleta exclusiva de metadados com interceptação telemática restrita.",
+            "Protocolos militares de espionagem física com auditoria contábil digital."
+        ],
+        "respostaCorreta": "Técnicas tradicionais de investigação com ferramentas digitais modernas.",
+        "fundamentacao": "Item 17: 'OSINT no TikTok é uma disciplina em evolução que combina técnicas tradicionais de investigação com ferramentas digitais modernas.'",
+        "id": 12
+    },
+    {
+        "texto": "O texto lista seis 'Pontos-chave' essenciais sobre a atividade de OSINT no TikTok. Entre esses pontos, consta explicitamente que:",
+        "opcoes": [
+            "A verificação em múltiplas fontes garante confiabilidade.",
+            "Os dados públicos no TikTok são escassos e de pouca utilidade investigativa.",
+            "O emprego de ferramentas automatizadas deve ser evitado por gerar redundância.",
+            "A documentação é facultativa quando a coleta for realizada por ferramentas analíticas."
+        ],
+        "respostaCorreta": "A verificação em múltiplas fontes garante confiabilidade.",
+        "fundamentacao": "Item 17 (Pontos-chave): '6. Verificação em múltiplas fontes garante confiabilidade.' (O texto também cita que dados são abundantes e valiosos, ferramentas automatizadas aumentam eficiência e documentação é essencial).",
+        "id": 13
+    },
+    {
+        "texto": "Em relação às diretrizes de 'Desenvolvimento contínuo' descritas na seção 17, assinale a alternativa que apresenta uma ação expressamente indicada:",
+        "opcoes": [
+            "Restringir a difusão de conhecimento ao âmbito interno de inteligência.",
+            "Participar de comunidades OSINT.",
+            "Fixar-se no uso de uma ferramenta consolidada para evitar dispersão analítica.",
+            "Limitar a prática a simulações teóricas, evitando o acompanhamento de mudanças."
+        ],
+        "respostaCorreta": "Participar de comunidades OSINT.",
+        "fundamentacao": "Item 17 (Desenvolvimento contínuo): '• Acompanhar mudanças na plataforma. • Aprender novas ferramentas. • Participar de comunidades OSINT. • Compartilhar conhecimento. • Praticar regularmente.'",
+        "id": 14
+    },
+    {
+        "texto": "Na subseção 'Recursos adicionais', foram categorizadas comunidades e ferramentas específicas para apoio ao analista de inteligência. A esse respeito, constam respectivamente como comunidades e como ferramentas:",
+        "opcoes": [
+            "Comunidades: GitHub e Shodan; Ferramentas: Bellingcat e Maltego.",
+            "Comunidades: OSINT Framework e Bellingcat; Ferramentas: GitHub, Shodan e Maltego.",
+            "Comunidades: Maltego e Shodan; Ferramentas: OSINT Framework e TikTok Scan.",
+            "Comunidades: Urlebird e Tikvib; Ferramentas: Epochconverter e DuckDuckGo."
+        ],
+        "respostaCorreta": "Comunidades: OSINT Framework e Bellingcat; Ferramentas: GitHub, Shodan e Maltego.",
+        "fundamentacao": "Item 17 (Recursos adicionais): '• Comunidades: OSINT Framework (...), Bellingcat (...) • Ferramentas: GitHub (...), Shodan (...), Maltego (...)'.",
+        "id": 15
+    },
+    {
+        "texto": "Conforme o Glossário contido no item 18, a sigla 'AVI' é definida expressamente como:",
+        "opcoes": [
+            "Auditoria Virtual de Informações.",
+            "Agente Virtual de Investigação.",
+            "Análise Vetorial de Incidentes.",
+            "Automação e Varredura de Inteligência."
+        ],
+        "respostaCorreta": "Agente Virtual de Investigação.",
+        "fundamentacao": "Item 18 (Glossário): 'AVI. Agente Virtual de Investigação.'",
+        "id": 16
+    },
+    {
+        "texto": "No Glossário da disciplina, o termo 'Dork' é conceituado como:",
+        "opcoes": [
+            "Uma consulta de busca avançada usando operadores especiais.",
+            "Um identificador fixo e inalterável vinculado à base interna do servidor.",
+            "Uma técnica invasiva de extração forçada de bases de dados relacionais.",
+            "Um comando destinado à exclusão de registros de tráfego de rede."
+        ],
+        "respostaCorreta": "Uma consulta de busca avançada usando operadores especiais.",
+        "fundamentacao": "Item 18 (Glossário): 'Dork. Consulta de busca avançada usando operadores especiais.'",
+        "id": 17
+    },
+    {
+        "texto": "De acordo com as definições conceituais fornecidas no Glossário (item 18), o termo 'Engajamento' compreende:",
+        "opcoes": [
+            "O tempo total de permanência de um perfil conectado aos servidores do TikTok.",
+            "Interações (likes, comentários, compartilhamentos).",
+            "O volume bruto de tráfego em pacotes de rede gerado por requisições HTTP.",
+            "A extração automatizada de perfis com o uso de scripts em terminal."
+        ],
+        "respostaCorreta": "Interações (likes, comentários, compartilhamentos).",
+        "fundamentacao": "Item 18 (Glossário): 'Engajamento. Interações (likes, comentários, compartilhamentos).'",
+        "id": 18
+    },
+    {
+        "texto": "O Glossário define 'Metadados' e 'Scraping', respectivamente, como:",
+        "opcoes": [
+            "Extração automatizada de dados de websites; captura de tela estática.",
+            "Dados sobre dados (informações sobre vídeos, comentários etc.); extração automatizada de dados de websites.",
+            "Marca de tempo Unix; consulta avançada por meio de operadores especiais.",
+            "Identificador alfanumérico da URL; agente fictício para infiltração digital."
+        ],
+        "respostaCorreta": "Dados sobre dados (informações sobre vídeos, comentários etc.); extração automatizada de dados de websites.",
+        "fundamentacao": "Item 18 (Glossário): 'Metadados. Dados sobre dados (informações sobre vídeos, comentários etc.).' e 'Scraping. Extração automatizada de dados de websites.'",
+        "id": 19
+    },
+    {
+        "texto": "No que tange aos conceitos de 'Snapshot' e 'Timestamp' apresentados no Glossário, assinale a opção correta:",
+        "opcoes": [
+            "Snapshot é o identificador único da conta; Timestamp é a lista de menções.",
+            "Snapshot é a marca de tempo em formato Unix; Timestamp é a extração de dados da API.",
+            "Snapshot é a captura de página em um ponto específico no tempo; Timestamp é a marca de tempo em formato Unix.",
+            "Snapshot é o relatório pericial impresso; Timestamp é o registro criptográfico de custódia."
+        ],
+        "respostaCorreta": "Snapshot é a captura de página em um ponto específico no tempo; Timestamp é a marca de tempo em formato Unix.",
+        "fundamentacao": "Item 18 (Glossário): 'Snapshot. Captura de página em um ponto específico no tempo.' e 'Timestamp. Marca de tempo em formato Unix.'",
+        "id": 20
+    },
+    {
+        "texto": "A diferenciação precisa entre 'UniqueID' e 'User ID' é fundamental no levantamento de inteligência em redes sociais. Segundo o Glossário:",
+        "opcoes": [
+            "UniqueID é o identificador único e imutável de uma conta; User ID é o nome de usuário que aparece na URL.",
+            "UniqueID é o nome de usuário único que aparece na URL; User ID é o identificador único e imutável de uma conta.",
+            "Ambos são termos estritamente sinônimos que indicam o selo oficial de verificação concedido pela plataforma.",
+            "UniqueID é a credencial criptografada de acesso; User ID é o endereço de protocolo IP do usuário."
+        ],
+        "respostaCorreta": "UniqueID é o nome de usuário único que aparece na URL; User ID é o identificador único e imutável de uma conta.",
+        "fundamentacao": "Item 18 (Glossário): 'UniqueID. Nome de usuário único que aparece na URL.' e 'User ID. Identificador único e imutável de uma conta.'",
+        "id": 21
+    },
+    {
+        "texto": "No Glossário da obra, o conceito atribuído expressamente à 'Verificação' é:",
+        "opcoes": [
+            "Confirmação por meio de três fontes digitais independentes em ambiente laboratorial.",
+            "Checagem do hash criptográfico para validação da integridade de evidências digitais.",
+            "Status oficial de conta confirmada pela plataforma.",
+            "Autenticação de dois fatores configurada pelo administrador do perfil investigado."
+        ],
+        "respostaCorreta": "Status oficial de conta confirmada pela plataforma.",
+        "fundamentacao": "Item 18 (Glossário): 'Verificação. Status oficial de conta confirmada pela plataforma.'",
+        "id": 22
+    },
+    {
+        "texto": "Na seção 'Recursos', sob a classificação específica de 'Plataformas de espelho', o texto aponta expressamente os seguintes endereços eletrônicos:",
+        "opcoes": [
+            "https://www.google.com/ e https://duckduckgo.com/",
+            "https://www.tikvib.com/ e https://urlebird.com/pt/",
+            "https://www.epochconverter.com/ e https://dfir.blog/unfurl/",
+            "https://www.shodan.io/ e https://www.maltego.com/"
+        ],
+        "respostaCorreta": "https://www.tikvib.com/ e https://urlebird.com/pt/",
+        "fundamentacao": "Seção Recursos (Plataformas de espelho): '• https://www.tikvib.com/ • https://urlebird.com/pt/'.",
+        "id": 23
+    },
+    {
+        "texto": "Dentre as 'Ferramentas mencionadas' listadas na seção de Recursos, qual endereço corresponde especificamente ao repositório do 'Tiktok-scan' no GitHub?",
+        "opcoes": [
+            "https://bellingcat.github.io/tiktok-timestamp/",
+            "https://github.com/faciltech/Tiktok-scan",
+            "https://www.osintcombine.com/",
+            "https://web.archive.org/"
+        ],
+        "respostaCorreta": "https://github.com/faciltech/Tiktok-scan",
+        "fundamentacao": "Seção Recursos (Ferramentas mencionadas): '• https://github.com/faciltech/Tiktok-scan'.",
+        "id": 24
+    },
+    {
+        "texto": "Na bibliografia de referência do texto, a obra intitulada 'Inteligência e investigação criminal em fontes abertas' (3ª edição, 2020) possui como autores:",
+        "opcoes": [
+            "Michael Bazzell.",
+            "Eduardo Amaral.",
+            "Alessandro Gonçalves Barreto e Emerson Wendt.",
+            "Alessandro Gonçalves Barreto e Michael Bazzell."
+        ],
+        "respostaCorreta": "Alessandro Gonçalves Barreto e Emerson Wendt.",
+        "fundamentacao": "Bibliografia: 'BARRETO, Alessandro Gonçalves; WENDT, Emerson. Inteligência e investigação criminal em fontes abertas. 3. ed. Rio de Janeiro: Brasport, 2020.'",
+        "id": 25
+    },
+    {
+        "texto": "De acordo com as referências bibliográficas do material de estudo, a obra de autoria de Eduardo Amaral (2025) intitula-se:",
+        "opcoes": [
+            "OSINT techniques: resources for uncovering online information.",
+            "Inteligência cibernética e investigação em fontes abertas.",
+            "Shell Script para OSINT.",
+            "Manual de automação para inteligência policial."
+        ],
+        "respostaCorreta": "Shell Script para OSINT.",
+        "fundamentacao": "Bibliografia: 'AMARAL, Eduardo. Shell Script para OSINT. Porto Alegre: WB Editora, 2025.'",
+        "id": 26
+    }
+]
