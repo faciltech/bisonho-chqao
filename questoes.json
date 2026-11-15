@@ -392,13 +392,13 @@
   {
     "texto": "Analise as assertivas abaixo e marque “V” para as sentenças verdadeiras e “F” para as sentenças falsas. ( ) Patrimônio Público - é o conjunto de direitos e bens, tangíveis ou intangíveis, adquiridos, formados, produzidos, recebidos, mantidos ou utilizados pelas OM, que represente um benefício presente ou futuro, inerente ao cumprimento da missão institucional do Exército Brasileiro. ( ) Órgão Gestor responsável - é a OM incumbida da execução das atividades de suprimento, manutenção e controle de materiais de interesse do Exército. ( ) Órgão Provedor - são as OM de apoio do Comando do Exército e de assessoramento direto e imediato ao Comandante do Exercito, responsáveis por planejar e promover ações direcionadas à gestão dos recursos colocados à sua disposição. ( ) Autonomia Administraüva - é a competência atribuída a uma organização militar (OM) para a prática de atos e fatos contábeis e administrativos decorrentes da gestão de bens e valores da União e de terceiros. ( ) Termo Circunstanciado Administrativo (TCAdm) - é um instrumento de apuração simplificado, que pode ser utilizado como alternativa à sindicância, tendo como requisitos: prejuízo de pequeno valor; responsável pelo dano previamente identificado; ausência de indícios de conduta dolosa ou de má-fé, ainda que de forma subjetiva; e inexistência de documento normativo específico, que determine a instauração obrigatória de sindicância; Assinale a alternativa CORRETA:",
     "opcoes": [
-      "V-V-V-F-30",
-      "V-V-V-V-30",
-      "F-V-V-F-30",
-      "V-F-F-V-30",
+      "V-V-V-F-F",
+      "V-V-V-V-F",
+      "F-V-V-F-F",
+      "V-F-F-V-V",
       "F-F-F-V-V"
     ],
-    "respostaCorreta": "V-V-V-F-30",
+    "respostaCorreta": "V-F-F-V-V",
     "fundamentacao": "Caderno CHQAO 2022 - Questão 31",
     "id": 31
   },
