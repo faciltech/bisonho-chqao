@@ -61,9 +61,9 @@
             }, []);
 
             const iniciarSimulado = () => {
-                // Embaralha todo o banco e pega até 30 questões para o quiz
+                // Embaralha todo o banco e pega até 10 questões para o quiz
                 const embaralhadas = [...bancoTotal].sort(() => Math.random() - 0.5);
-                const selecionadas = embaralhadas.slice(0, 30);
+                const selecionadas = embaralhadas.slice(0, 10);
                 setQuestoesQuiz(selecionadas);
                 setPerguntaAtual(0);
                 setPontuacao(0);
